@@ -26,7 +26,7 @@ function selectionCountry () {
     var capitalName = findInformation(countryName, capitals);
     var abreviation = $(this).attr('data-id');
 
-    var pathFlag = 'url(svg-flags/' + abreviation + '.svg)';
+    var pathFlag = 'url(svg-flags/' + abreviation.toLowerCase() + '.svg)';
     $('#currentFlag').css('background-image', pathFlag);
 
     // Press Index
