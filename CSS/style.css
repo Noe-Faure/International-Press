@@ -1,0 +1,488 @@
+body {
+    background-color: #f2f6fa !important;
+}
+
+.disabled {
+    opacity: 0.2 !important;
+    cursor: no-drop !important;
+}
+
+/* === Map === */
+
+.shadow-map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -3;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.07;
+    object-fit: contain;
+}
+
+.country {
+    fill: #ffffff;
+    stroke: #ebebef;
+    cursor: pointer;
+    transition-duration: 0s;
+}
+
+.country-hover {
+    fill: #dbeaff;
+    stroke: #1974ff;
+}
+
+.country-selection {
+    fill: #0b62e4;
+    stroke: #0b62e4;
+}
+
+.country:active {
+    fill: #0e7dd9;
+    stroke: rgb(14, 125, 217);
+}
+
+.world-svg {
+    width: 100vw;
+    height: 100vh;
+    /*background-color: #f2f6fa;*/
+}
+
+/* === Left NavBar === */
+
+#vertical-left-navbar {
+    height: 100vh;
+    width: 100px;
+    position: absolute;
+    background-color: #f9fbfd;
+    box-shadow: 0 1px 3px rgba(50, 50, 93, 0.15), 0 1px 0 rgba(0, 0, 0, 0.02);
+    border-right: 1px solid #d0d0d0;
+}
+
+#vertical-left-navbar .logo {
+    text-align: center;
+    font-weight: 700;
+    margin-top: 20px;
+    color: #0f6fff;
+}
+
+#vertical-left-navbar .update {
+    text-align: center;
+    font-size: 0.6em;
+    font-weight: 600;
+}
+
+#vertical-left-navbar .time {
+    text-align: center;
+    font-size: 0.5em;
+    margin-top: 0.5em;
+}
+
+.left-navbar-container .nav-button {
+    padding: 25px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    border-right: 2px solid #ffffff;
+    font-size: 1.2em;
+    color: #c3c3c3;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.left-navbar-container .nav-button:hover {
+    color: #0f6fff !important;
+    border-right: 2px solid #0f6fff !important;
+    background-color: #0b62e412;
+}
+
+.left-navbar-container .nav-button:active {
+    color: white !important;
+    border-right: 2px solid #0f6fff;
+    background-color: #0f6fff;
+    box-shadow: 0 1px 3px rgba(50, 50, 93, 0.15), 0 1px 0 rgba(0, 0, 0, 0.02);
+}
+
+.left-navbar-container .active {
+    color: #0f6fff !important;
+    border-right: 2px solid #0f6fff !important;
+    background: linear-gradient(-90deg, #0b62e412, transparent);
+}
+
+.left-navbar-container {
+    margin-top: 25px;
+}
+
+.notification {
+    position: absolute;
+    background-color: #0f6fff;
+    color: white;
+    border-radius: 50%;
+    width: 1.5em;
+    height: 1.5em;
+    font-size: 0.6em;
+    transform: translate(10px, -2px);
+    box-shadow: 0 1px 3px rgba(50, 50, 93, 0.15), 0 1px 0 rgba(0, 0, 0, 0.02);
+}
+
+/* === Right NavBar === */
+
+#vertical-right-bar {
+    position: absolute;
+    transform: translateX(30vw);
+    right: 0;
+    width: 30vw;
+    height: 100vh;
+    backdrop-filter: blur(4px) contrast(100%);
+    background-color: rgb(255 255 255 / 0.2);
+    box-shadow: 0 1px 3px rgba(50, 50, 93, 0.15), 0 1px 0 rgba(0, 0, 0, 0.02);
+    transition-duration: 0.2s;
+    padding: 1.5em 2em 1.5em 2em;
+
+    display: none;
+}
+
+#vertical-right-bar #countryName {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#vertical-right-bar #currentFlag {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 1.5em 2em 0 0;
+    width: 6vw;
+    height: 4em;
+    background-image: url("svg-flags/ad.svg");
+    background-size: 100% 100%;
+}
+
+#switchMenuButton {
+    width: 100%;
+    height: 35px;
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    border: 1px solid #dcdfe1;
+}
+
+#switchMenuButton .vertical-separator{
+    height: 100%;
+    width: 1px;
+    background-color: #dcdfe1;
+}
+
+#switchMenuButton .choice-button {
+    width: 50%;
+    text-align: center;
+    margin: 0.4em;
+    border-radius: 0.2em;
+    font-size: 0.8em;
+    padding: 0.15em;
+}
+
+#switchMenuButton .choice-button svg{
+    margin-top: -0.2em;
+}
+
+#switchMenuButton .active {
+    background-color: #0f6fff;
+    color: white;
+    box-shadow: 0 1px 3px rgba(50, 50, 93, 0.15), 0 1px 0 rgba(0, 0, 0, 0.02);
+}
+
+#switchMenuButton .not-active {
+    color: #dcdfe1;
+}
+
+#switchMenuButton .not-active:hover {
+    color: #212529;
+    background-color: #f1f1f1;
+}
+
+.information-categorie {
+    margin-top: 1.5em;
+    font-weight: 500;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid #dfe1e2;
+    margin-bottom: 0.9em;
+}
+
+.table-informations {
+    width: 100%;
+}
+
+.table-informations tr {
+    font-weight: 100;
+    font-size: 0.8em;
+}
+
+.table-informations .indice {
+    text-align: right;
+    padding-right: 0.8em;
+}
+
+.table-information .information a svg {
+    padding-bottom: 0.1em;
+}
+
+.rank {
+    text-align: right;
+    padding-right: 0.5em;
+}
+
+.translate {
+    text-align: right;
+    padding-right: 0.8em;
+}
+
+.accordion-categorie {
+    color: #212529;
+}
+
+.accordion-categorie:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.information-categorie svg {
+    transition: 0.2;
+}
+
+.check-level-3 {
+    color: #41cc59;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.span-nd {
+    font-size: 0.75em;
+    color: #212529;
+}
+
+#informationContainerScroll {
+    overflow-y: scroll;
+    width: 100%;
+    height: calc(100vh - 4em - 2rem - 1px - 75px);
+
+    /* Scroll bar width */
+    padding-right: 15px;
+}
+
+.selecting-information-index {
+    font-weight: 500 !important;
+    color: #0f6fff;
+}
+
+.selecting-information-index .span-nd{
+    font-weight: 500 !important;
+    color: #0f6fff;
+}
+
+/* === Main Dialog Box === */
+
+#mainDialogBox {
+    width: calc(100vw - 40px - 100px - 6em - 60px);;
+    height: calc(100vh);
+    position: absolute;
+    background-color: rgb(255 255 255 / 0.2);
+    top: 0;
+    /* left: calc(100px + 100px); */
+    right: 0;
+    backdrop-filter: blur(4px) contrast(100%);
+    /* border-radius: 0.4em; */
+    box-shadow: 0 1px 3px rgba(50, 50, 93, 0.15), 0 1px 0 rgba(0, 0, 0, 0.02);
+    padding: 1.5em calc(30vw + 2em - 10px) 1.5em 2em;
+    transition: 0.2s;
+
+    display: none;
+    transform: translateX(calc(100vw - 40px - 100px - 5em - 40px));
+    opacity: 0;
+}
+
+#mainDialogBox .title-mainDialogBox {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+}
+
+#mainDialogBox .maj-index-container {
+    display: flex;
+    justify-content: center;
+    font-size: 0.8em;
+    font-weight: 100;
+    padding-bottom: 0.25em;
+    padding-top: 0.25em;
+}
+
+#mainDialogBox h3 {
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+}
+
+#mainDialogBox p {
+    font-size: 0.8em;
+    font-weight: 100;
+    text-align: justify;
+}
+
+#mainDialogBox .closeMainDialogBox {
+    float: left;
+    color: #a2a2a2;
+    margin-top: 0.1em;
+    cursor: pointer;
+}
+
+#mainDialogBox .closeMainDialogBox:hover {
+    color: #212529;
+}
+
+#mainDialogBox .closeMainDialogBox:active {
+    color: #0f6fff;
+}
+
+#mainDialogBox .source-container {
+    font-size: 0.8em;
+    font-weight: 100;
+    padding-bottom: 1.3rem;
+    padding-top: 0.3rem;
+    border-bottom: 1px solid rgba(0,0,0,.1);;
+}
+
+#mainDialogBox .source-container .organism-label {
+    font-weight: 500;
+}
+
+#mainDialogBox .source-container .source-link {
+    float: right;
+    padding-right: 20px;
+    color: #0f6fff;
+}
+
+#containerDescriptionIndex {
+    overflow-y: scroll;
+    height: calc(100vh - (1.5em*2 + 1.5em + 0.5em + 0.8em + 2rem + 3.8rem));
+
+    /* Scroll bar width */
+    padding-right: 20px;
+
+}
+
+/* === Main page === */
+
+.action-button {
+    position: absolute;
+    display: flex;
+    left: calc(100px + 20px);
+    background-color: #0f6fff;
+    color: white;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    border-radius: 0.4rem;
+    box-shadow: 0 1px 3px rgba(50, 50, 93, 0.15), 0 1px 0 rgba(0, 0, 0, 0.02);
+    cursor: pointer;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    transition-duration: 0.2s;
+}
+
+.action-button:hover {
+    background-color: #0b62e4;
+}
+
+.action-button:active {
+    background-color: #0050c8;
+}
+
+.action-button p {
+    margin-bottom: 0;
+}
+
+.action-button svg {
+    margin-top: 0.3em;
+}
+
+#searchButton {
+    top: 20px;
+    left: calc(100px + 20px);
+}
+
+#searchButton svg{
+    font-size: 0.2em;
+}
+
+#searchButton input {
+    margin-left: 1.5rem;
+    margin-right: -0.5rem;
+    font-size: 0.6em;
+    padding: 0.2em;
+    border-radius: 0.4em;
+    border: 1px solid white;
+    padding-left: 1em;
+    width: 20vw;
+    box-shadow: 0 1px 3px rgba(50, 50, 93, 0.15), 0 1px 0 rgba(0, 0, 0, 0.02);
+    display: none;
+}
+
+#back-button {
+    top: calc(40px + 1rem + 0.8em);
+    display: none;
+    opacity: 0;
+}
+
+#zoomButton {
+    position: absolute;
+    bottom: 20px;
+    left: calc(100px + 20px);
+    background-color: white;
+    border-radius: 0.4em;
+    box-shadow: 0 1px 3px rgba(50, 50, 93, 0.15), 0 1px 0 rgba(0, 0, 0, 0.02);
+    cursor: pointer;
+}
+
+#zoomButton div {
+    padding: 0.7em;
+    text-align: center;
+}
+
+#zoomButton hr {
+    margin: 0;
+}
+
+#zoomButton div:hover {
+    background-color: #f5f5f5;
+}
+
+#zoomButton div:active {
+    background-color: #e8e8e8;
+}
+
+.alert-banner {
+    position: absolute;
+    background-color: #fc7c5f;
+    border-radius: 0.4em;
+    padding: 0.7rem 4rem;
+    color: white;
+    font-size: 0.8em;
+    left: 50%;
+    top: 20px;
+    transform: translateX(-50%);
+    box-shadow: 0 1px 3px rgba(50, 50, 93, 0.15), 0 1px 0 rgba(0, 0, 0, 0.02);
+    font-weight: 500;
+    
+    animation: banner-jump 0.9s infinite;
+    animation-timing-function: ease-in;
+}
+
+.alert-banner .icon-banner {
+    margin-right: 1.5em;
+}
+
+@keyframes banner-jump {
+    0% {top: 20px}
+    50% {top: 25px}
+    100% {top: 20px}
+}
