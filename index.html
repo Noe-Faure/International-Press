@@ -34,8 +34,8 @@
 			$('#back-button').on('click', deselectCountry);
 			$('#switchMenuButton .choice-button').on('click', changeSwitchMenuButton);
 
-			$('#closeSearchBar').on('click', closeSearchBar);
 			$('#searchButton').on('click', deploySearchBar);
+			$('#searchBar').on('blur', deploySearchBar);
 			$('#searchBar').on("keyup", searchInMap);
 			
 			$('.informationDialogOpen').on('click', openInformationIndex);
