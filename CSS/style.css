@@ -415,16 +415,46 @@ body {
 }
 
 #searchButton input {
-    margin-left: 1.5rem;
-    margin-right: -0.5rem;
+    font-weight: 100;
+    margin-left: 0rem;
     font-size: 0.6em;
-    padding: 0.2em;
+    padding: 0em;
     border-radius: 0.4em;
-    border: 1px solid white;
-    padding-left: 1em;
-    width: 20vw;
+    border: 0px solid white;
+    padding-left: 0em;
+    width: 0vw;
     box-shadow: 0 1px 3px rgba(50, 50, 93, 0.15), 0 1px 0 rgba(0, 0, 0, 0.02);
+    /*display: none;*/
+
+    transition: 0.5s;
+    opacity: 0;
+}
+
+#searchButton input:focus {
+    outline:0px !important;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+#searchButton input:focus::placeholder {
+    color: white;
+}
+
+#closeSearchBar {
+    margin-right: -0.8rem;
+    margin-left: 0.5rem;
+    margin-top: -0.2em;
+    padding-left: 0.2em;
+    padding-right: 0.1em;
+    transform: translateY(0.1em);
+    background-color: #0f6fff;
+    border-radius: 0.4em;
+
     display: none;
+}
+
+#closeSearchBar:hover {
+    background-color: #3586ff;
 }
 
 #back-button {
@@ -475,6 +505,7 @@ body {
     
     animation: banner-jump 0.9s infinite;
     animation-timing-function: ease-in;
+    display: none;
 }
 
 .alert-banner .icon-banner {

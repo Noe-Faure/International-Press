@@ -197,6 +197,63 @@ function closeInformationIndex () {
     }
 }
 
+function searchInMap () {
+
+    // Get the enter
+    var searchInput = $(this).val().toLowerCase();
+
+    if (searchInput != '')
+    {
+        $("#allCountriesSvg path").each(function() {
+            let pathCountry = $(this);
+
+            // Filter by meta name
+            if(pathCountry.data('name').toLowerCase().indexOf(searchInput) > -1) 
+            {
+                pathCountry.addClass('country-hover');
+            } 
+            else {
+                pathCountry.removeClass('country-hover');
+            }
+          });
+    }
+    else {
+        $("#allCountriesSvg path").removeClass('country-hover');
+    }
+}
+
+function deploySearchBar () {
+
+    if ($('#searchBar').css('opacity') == 0)
+    {
+
+        $('#searchBar').focus();
+
+        $('#searchBar').css({
+            opacity: 1,
+            marginLeft: '1.5rem',
+            width: '20vw',
+            padding: '0.2em',
+            paddingLeft: '1em',
+            border: '1px solid white'
+        });
+        $('#closeSearchBar').show();
+    }
+    else {
+
+        $('#searchBar').css({
+            opacity: 0,
+            marginLeft: '0rem',
+            width: '0vw',
+            padding: '0',
+            paddingLeft: '0',
+            border: '0'
+        });
+        $('#closeSearchBar').hide();
+
+    }
+}
+
 // ============ Extract Data ============
 
 function findGdpByCountry(object, countryName) {
