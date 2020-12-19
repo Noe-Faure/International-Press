@@ -27,6 +27,16 @@ body {
     transition-duration: 0s;
 }
 
+.country-hover-2 {
+    fill: url(#stripBlue);
+    stroke: none;
+}
+
+.country-hover-3 {
+    fill: #99C3FF;
+    stroke: #1974ff;
+}
+
 .country-hover {
     fill: #dbeaff;
     stroke: #1974ff;
@@ -516,4 +526,16 @@ body {
     0% {top: 20px}
     50% {top: 25px}
     100% {top: 20px}
+}
+
+/* ________________ MEDIA QUERY ________________*/
+
+@media (max-width: 900px) {
+    .disabled-on-small-screen {
+        display: none !important;
+    }
+
+    #vertical-right-bar {
+        width: 50vw;
+    }
 }

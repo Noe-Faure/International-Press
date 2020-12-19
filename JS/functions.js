@@ -206,11 +206,13 @@ function searchInMap () {
     {
         $("#allCountriesSvg path").each(function() {
             let pathCountry = $(this);
+            var country = pathCountry.data('name').toLowerCase();
+            var capitalName = findInformation(country, capitals).toLowerCase();
 
-            // Filter by meta name
-            if(pathCountry.data('name').toLowerCase().indexOf(searchInput) > -1) 
+            if(country.indexOf(searchInput) > -1) 
             {
                 pathCountry.addClass('country-hover');
+
             } 
             else {
                 pathCountry.removeClass('country-hover');
@@ -219,6 +221,8 @@ function searchInMap () {
     }
     else {
         $("#allCountriesSvg path").removeClass('country-hover');
+        $("#allCountriesSvg path").removeClass('country-hover-2');
+        $("#allCountriesSvg path").removeClass('country-hover-3');
     }
 }
 
