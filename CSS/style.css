@@ -150,6 +150,8 @@ body {
     padding: 1.5em 2em 1.5em 2em;
 
     display: none;
+
+    z-index: 5;
 }
 
 #vertical-right-bar #countryName {
@@ -310,6 +312,8 @@ body {
     display: none;
     transform: translateX(calc(100vw - 40px - 100px - 5em - 40px));
     opacity: 0;
+
+    z-index: 4;
 }
 
 #mainDialogBox .title-mainDialogBox {
@@ -382,6 +386,9 @@ body {
 
 }
 
+.update-date-of-indice {
+    text-align: right;
+}
 /* === Main page === */
 
 .action-button {
@@ -537,5 +544,10 @@ body {
 
     #vertical-right-bar {
         width: 50vw;
+    }
+
+    #mainDialogBox {
+        width: calc(100vw - 100px) !important;
+        padding: 1.5em calc(50vw + 2em - 10px) 1.5em 2em !important;
     }
 }
