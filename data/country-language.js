@@ -1149,6 +1149,17 @@
       "hu"
     ]
   },
+  "IC": {
+    "name": "Canary Islands",
+    "native": "Islas Canarias",
+    "phone": null,
+    "continent": null,
+    "capital": "Madrid",
+    "currency": "EUR",
+    "languages": [
+      "es"
+    ]
+  },
   "ID": {
     "name": "Indonesia",
     "native": "Indonesia",

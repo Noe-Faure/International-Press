@@ -500,7 +500,7 @@ var capitals = [
         "city": "Macao"
     },
     {
-        "country": "North Macedonia",
+        "country": "Macedonia",
         "city": "Skopje"
     },
     {
