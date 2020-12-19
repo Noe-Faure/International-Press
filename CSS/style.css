@@ -283,6 +283,33 @@ body {
     padding-right: 15px;
 }
 
+#informationContainerScrollSecond {
+    overflow-y: scroll;
+    width: 100%;
+    height: calc(100vh - 4em - 2rem - 1px - 75px);
+
+    /* Scroll bar width */
+    padding-right: 15px;
+
+    display: none;
+}
+
+#informationContainerScrollSecond .title-not-found {
+    text-align: center;
+}
+
+#informationContainerScrollSecond img {
+    margin-top: 2em;
+    max-height: 10em;
+    filter: grayscale(0.2) drop-shadow(2px 4px 6px rgba(0,0,0, 0.3));
+    opacity: 0.6;
+}
+
+#informationContainerScrollSecond .description-not-found {
+    text-align: center;
+    font-weight: 100;
+}
+
 .selecting-information-index {
     font-weight: 500 !important;
     color: #0f6fff;

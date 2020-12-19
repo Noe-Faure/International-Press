@@ -134,10 +134,12 @@ function changeSwitchMenuButton () {
 
     if (informationSwitchOpen == true) {
         $('#informationContainerScroll').css('display', 'none');
+        $('#informationContainerScrollSecond').css('display', 'block');
         informationSwitchOpen = false;
     }
     else {
         $('#informationContainerScroll').css('display', 'block');
+        $('#informationContainerScrollSecond').css('display', 'none');
         informationSwitchOpen = true;
     }
 }
