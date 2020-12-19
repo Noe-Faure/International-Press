@@ -448,6 +448,10 @@ var currency = [
         "index": "AUD"
     },
     {
+        "country": "Kosovo",
+        "index": "EUR"
+    },
+    {
         "country": "Kuwait",
         "index": "KWD"
     },

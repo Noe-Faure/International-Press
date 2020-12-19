@@ -488,6 +488,14 @@ var gdp = [
       "pop": "53771.2960"
     },
     {
+      "rank": null,
+      "country": "Kosovo",
+      "imfGDP": 7947000000,
+      "unGDP": 7947000000,
+      "gdpPerCapita": null,
+      "pop": null
+    },
+    {
       "rank": 62,
       "country": "Ecuador",
       "imfGDP": 107730000000,

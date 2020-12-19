@@ -448,6 +448,10 @@ var capitals = [
         "city": "Bairiki"
     },
     {
+        "country": "Kosovo",
+        "city": "Pristina"
+    },
+    {
         "country": "Kuwait",
         "city": "Koweït"
     },

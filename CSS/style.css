@@ -56,6 +56,9 @@ body {
     width: 100vw;
     height: 100vh;
     /*background-color: #f2f6fa;*/
+
+    position: absolute;
+    z-index: -2;
 }
 
 /* === Left NavBar === */

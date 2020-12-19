@@ -12,6 +12,22 @@ function eraseHoverCountry () {
     $(this).removeClass('country-hover');
 }
 
+function zoomOnCountry (e) {
+    var mouseX = e.pageX;
+    var mouseY = e.pageY;
+
+    mouseY = - mouseY;
+    mouseX = - mouseX;
+
+    //alert('x : ' + mouseX + ' | ' + 'y : ' + mouseY);
+
+    /*
+    $('.world-svg').css('width', '20vw');
+    $('.world-svg').css('height', '20vw');
+    $('.world-svg').css('left', mouseX);
+    $('.world-svg').css('top', mouseY);*/
+}
+
 function selectionCountry () {
     menuRightOpen = true;
 
