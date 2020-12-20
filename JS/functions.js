@@ -2,7 +2,7 @@
 var menuRightOpen = false;
 var mainDialogBoxOpen = false;
 var informationSwitchOpen = true;
-
+var menuSide = 'right';
 
 function hoverCountry () {
     $(this).addClass('country-hover');
@@ -10,6 +10,28 @@ function hoverCountry () {
 
 function eraseHoverCountry () {
     $(this).removeClass('country-hover');
+}
+
+function flipMenu() {
+
+    if (menuSide == 'right') 
+    {
+        $('#vertical-right-bar').css('transform', 'translateX(calc(-70vw + 100px))');
+        $('#searchButton').css('left', 'calc(100vw - 11rem)');
+        $('#back-button').css('left', 'calc(100vw - 9rem + 5px)');
+        $('#flipFlopMenu').css('left', 'calc(100vw - 5rem - 4px)');
+
+        menuSide = 'left';
+    }
+    else if (menuSide == 'left')
+    {
+        $('#vertical-right-bar').css('transform', 'translateX(0px)');
+        $('#searchButton').css('left', 'calc(100px + 20px)');
+        $('#back-button').css('left', 'calc(100px + 20px)');
+        $('#flipFlopMenu').css('left', 'calc(100px + 20px)');
+
+        menuSide = 'right';
+    }
 }
 
 function zoomOnCountry (e) {
@@ -35,6 +57,7 @@ function selectionCountry () {
     $(this).addClass('country-selection');
 
     $('.alert-banner').hide()
+    $('#flipFlopMenu').show();
 ;
     // ====== Display informations ======
 
@@ -120,8 +143,16 @@ function selectionCountry () {
     $('#countryCapital').html(capitalName);
 
     $('#vertical-right-bar').css('display', 'block');
-    setTimeout(function(){ $('#vertical-right-bar').css('transform', 'translateX(0)')}, 50);
     backButtonAppartion();
+
+    if (menuSide == 'right')
+    {
+        setTimeout(function(){ $('#vertical-right-bar').css('transform', 'translateX(0)')}, 50);
+    }
+    else if (menuSide == 'left')
+    {
+        setTimeout(function(){ $('#vertical-right-bar').css('transform', 'translateX(calc(-70vw + 100px))')}, 50);
+    }
 
 }
 
@@ -131,12 +162,13 @@ function deselectCountry () {
 
     $('#back-button').css('display', 'none');
     $('#back-button').css('opacity', '1');
+    $('#flipFlopMenu').hide();
 
     $('.country').removeClass('country-selection');
 
     $('#vertical-right-bar').css('transform', 'translateX(30vw)');
     setTimeout(function(){ $('#vertical-right-bar').css('display', 'none')}, 50);
-    closeInformationIndex ()
+    closeInformationIndex ();
 }
 
 function backButtonAppartion () {

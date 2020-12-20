@@ -557,6 +557,11 @@ body {
     opacity: 0;
 }
 
+#flipFlopMenu {
+    top: 112px;
+    display: none;
+}
+
 #zoomButton {
     position: absolute;
     bottom: 20px;
