@@ -1,4 +1,4 @@
-[
+var coalMix = [
     {
       "country": "Africa",
       "index": "22.51"

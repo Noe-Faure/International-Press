@@ -1,207 +1,207 @@
-var windMix = [
+var hydroMix = [
     {
       "country": "Africa",
-      "index": "0.79"
+      "index": "5.96"
     },
     {
       "country": "Algeria",
-      "index": "0.01"
-    },
-    {
-      "country": "Argentina",
-      "index": "1.29"
-    },
-    {
-      "country": "Australia",
-      "index": "2.71"
-    },
-    {
-      "country": "Austria",
-      "index": "4.42"
-    },
-    {
-      "country": "Azerbaijan",
-      "index": "0.18"
-    },
-    {
-      "country": "Bangladesh",
-      "index": "0.01"
-    },
-    {
-      "country": "Belarus",
-      "index": "0.09"
-    },
-    {
-      "country": "Belgium",
-      "index": "3.13"
-    },
-    {
-      "country": "Brazil",
-      "index": "4.01"
-    },
-    {
-      "country": "Bulgaria",
-      "index": "1.56"
-    },
-    {
-      "country": "Canada",
-      "index": "2.14"
-    },
-    {
-      "country": "Chile",
-      "index": "2.85"
-    },
-    {
-      "country": "China",
-      "index": "2.55"
-    },
-    {
-      "country": "Colombia",
-      "index": "0.03"
-    },
-    {
-      "country": "Croatia",
-      "index": "3.77"
-    },
-    {
-      "country": "Cyprus",
-      "index": "1.82"
-    },
-    {
-      "country": "Czechia",
-      "index": "0.37"
-    },
-    {
-      "country": "Denmark",
-      "index": "20.66"
-    },
-    {
-      "country": "Ecuador",
-      "index": "0.10"
-    },
-    {
-      "country": "Egypt",
-      "index": "0.64"
-    },
-    {
-      "country": "Estonia",
-      "index": "2.53"
-    },
-    {
-      "country": "Europe",
-      "index": "4.91"
-    },
-    {
-      "country": "Finland",
-      "index": "4.86"
-    },
-    {
-      "country": "France",
-      "index": "3.18"
-    },
-    {
-      "country": "Germany",
-      "index": "8.55"
-    },
-    {
-      "country": "Greece",
-      "index": "5.66"
-    },
-    {
-      "country": "Hong Kong",
-      "index": "0.01"
-    },
-    {
-      "country": "Hungary",
-      "index": "0.65"
-    },
-    {
-      "country": "Iceland",
-      "index": "0.03"
-    },
-    {
-      "country": "India",
-      "index": "1.66"
-    },
-    {
-      "country": "Indonesia",
-      "index": "0.02"
-    },
-    {
-      "country": "Iran",
-      "index": "0.03"
-    },
-    {
-      "country": "Iraq",
-      "index": "0.00"
-    },
-    {
-      "country": "Ireland",
-      "index": "13.03"
-    },
-    {
-      "country": "Israel",
       "index": "0.05"
     },
     {
-      "country": "Italy",
-      "index": "2.81"
+      "country": "Argentina",
+      "index": "9.54"
     },
     {
-      "country": "Japan",
-      "index": "0.41"
+      "country": "Australia",
+      "index": "1.99"
     },
     {
-      "country": "Kazakhstan",
-      "index": "0.14"
+      "country": "Austria",
+      "index": "24.21"
     },
     {
-      "country": "Kuwait",
-      "index": "0.01"
+      "country": "Azerbaijan",
+      "index": "2.13"
     },
     {
-      "country": "Latvia",
-      "index": "0.87"
+      "country": "Bangladesh",
+      "index": "0.42"
     },
     {
-      "country": "Lithuania",
-      "index": "5.31"
+      "country": "Belarus",
+      "index": "0.27"
     },
     {
-      "country": "Luxembourg",
-      "index": "1.40"
+      "country": "Belgium",
+      "index": "0.10"
     },
     {
-      "country": "Malaysia",
+      "country": "Brazil",
+      "index": "28.70"
+    },
+    {
+      "country": "Bulgaria",
+      "index": "4.08"
+    },
+    {
+      "country": "Canada",
+      "index": "23.96"
+    },
+    {
+      "country": "Chile",
+      "index": "11.23"
+    },
+    {
+      "country": "China",
+      "index": "7.99"
+    },
+    {
+      "country": "Colombia",
+      "index": "23.88"
+    },
+    {
+      "country": "Croatia",
+      "index": "15.31"
+    },
+    {
+      "country": "Cyprus",
       "index": "0.00"
     },
     {
+      "country": "Czechia",
+      "index": "1.05"
+    },
+    {
+      "country": "Denmark",
+      "index": "0.02"
+    },
+    {
+      "country": "Ecuador",
+      "index": "29.54"
+    },
+    {
+      "country": "Egypt",
+      "index": "3.07"
+    },
+    {
+      "country": "Estonia",
+      "index": "0.06"
+    },
+    {
+      "country": "Europe",
+      "index": "6.73"
+    },
+    {
+      "country": "Finland",
+      "index": "9.98"
+    },
+    {
+      "country": "France",
+      "index": "5.39"
+    },
+    {
+      "country": "Germany",
+      "index": "1.37"
+    },
+    {
+      "country": "Greece",
+      "index": "3.12"
+    },
+    {
+      "country": "Hong Kong",
+      "index": "0.00"
+    },
+    {
+      "country": "Hungary",
+      "index": "0.20"
+    },
+    {
+      "country": "Iceland",
+      "index": "54.63"
+    },
+    {
+      "country": "India",
+      "index": "4.24"
+    },
+    {
+      "country": "Indonesia",
+      "index": "1.70"
+    },
+    {
+      "country": "Iran",
+      "index": "2.09"
+    },
+    {
+      "country": "Iraq",
+      "index": "0.99"
+    },
+    {
+      "country": "Ireland",
+      "index": "1.19"
+    },
+    {
+      "country": "Israel",
+      "index": "0.02"
+    },
+    {
+      "country": "Italy",
+      "index": "6.31"
+    },
+    {
+      "country": "Japan",
+      "index": "3.53"
+    },
+    {
+      "country": "Kazakhstan",
+      "index": "2.87"
+    },
+    {
+      "country": "Kuwait",
+      "index": "0.00"
+    },
+    {
+      "country": "Latvia",
+      "index": "11.83"
+    },
+    {
+      "country": "Lithuania",
+      "index": "1.26"
+    },
+    {
+      "country": "Luxembourg",
+      "index": "0.56"
+    },
+    {
+      "country": "Malaysia",
+      "index": "5.66"
+    },
+    {
       "country": "Mexico",
-      "index": "2.03"
+      "index": "2.75"
     },
     {
       "country": "Morocco",
-      "index": "4.41"
+      "index": "1.19"
     },
     {
       "country": "Netherlands",
-      "index": "2.91"
+      "index": "0.02"
     },
     {
       "country": "New Zealand",
-      "index": "2.19"
+      "index": "24.89"
     },
     {
       "country": "North America",
-      "index": "2.71"
+      "index": "5.18"
     },
     {
       "country": "North Macedonia",
-      "index": "0.81"
+      "index": "9.27"
     },
     {
       "country": "Norway",
-      "index": "2.79"
+      "index": "63.20"
     },
     {
       "country": "Oman",
@@ -209,23 +209,23 @@ var windMix = [
     },
     {
       "country": "Pakistan",
-      "index": "1.20"
+      "index": "8.91"
     },
     {
       "country": "Peru",
-      "index": "1.26"
+      "index": "24.24"
     },
     {
       "country": "Philippines",
-      "index": "0.52"
+      "index": "4.25"
     },
     {
       "country": "Poland",
-      "index": "3.13"
+      "index": "0.41"
     },
     {
       "country": "Portugal",
-      "index": "11.74"
+      "index": "7.47"
     },
     {
       "country": "Qatar",
@@ -233,11 +233,11 @@ var windMix = [
     },
     {
       "country": "Romania",
-      "index": "4.38"
+      "index": "10.04"
     },
     {
       "country": "Russia",
-      "index": "0.01"
+      "index": "5.81"
     },
     {
       "country": "Saudi Arabia",
@@ -249,15 +249,15 @@ var windMix = [
     },
     {
       "country": "Slovakia",
-      "index": "0.01"
+      "index": "5.76"
     },
     {
       "country": "Slovenia",
-      "index": "0.02"
+      "index": "13.98"
     },
     {
       "country": "South Africa",
-      "index": "1.15"
+      "index": "0.13"
     },
     {
       "country": "South Korea",
@@ -265,27 +265,27 @@ var windMix = [
     },
     {
       "country": "Spain",
-      "index": "8.75"
+      "index": "3.93"
     },
     {
       "country": "Sri Lanka",
-      "index": "0.91"
+      "index": "12.00"
     },
     {
       "country": "Sweden",
-      "index": "7.91"
+      "index": "26.14"
     },
     {
       "country": "Switzerland",
-      "index": "0.10"
+      "index": "27.37"
     },
     {
       "country": "Taiwan",
-      "index": "0.35"
+      "index": "1.03"
     },
     {
       "country": "Thailand",
-      "index": "0.42"
+      "index": "1.00"
     },
     {
       "country": "Trinidad and Tobago",
@@ -293,15 +293,15 @@ var windMix = [
     },
     {
       "country": "Turkey",
-      "index": "2.98"
+      "index": "12.25"
     },
     {
       "country": "Turkmenistan",
-      "index": "0.00"
+      "index": "0.01"
     },
     {
       "country": "Ukraine",
-      "index": "0.49"
+      "index": "1.79"
     },
     {
       "country": "United Arab Emirates",
@@ -309,26 +309,26 @@ var windMix = [
     },
     {
       "country": "United Kingdom",
-      "index": "7.29"
+      "index": "0.68"
     },
     {
       "country": "United States",
-      "index": "2.85"
+      "index": "2.55"
     },
     {
       "country": "Uzbekistan",
-      "index": "0.00"
+      "index": "3.25"
     },
     {
       "country": "Venezuela",
-      "index": "0.06"
+      "index": "25.33"
     },
     {
       "country": "Vietnam",
-      "index": "0.11"
+      "index": "14.19"
     },
     {
       "country": "World",
-      "index": "2.18"
+      "index": "6.45"
     }
   ]

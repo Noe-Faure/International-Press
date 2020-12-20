@@ -68,7 +68,7 @@ var globalEmission = [
           "index": 1.24
         },
         {
-          "country": "Italia",
+          "country": "Italy",
           "index": 1.18
         },
         {

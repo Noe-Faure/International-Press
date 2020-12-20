@@ -106,6 +106,15 @@ function selectionCountry () {
     $('.global-emission .rank .num').html(findRankByIndex(globalEmission, countryName));
     $('.global-emission .rank .span-nd').html(nthOfIndex(findRankByIndex(globalEmission, countryName)));
 
+    // Energy Mix
+    changeBarEnergyMix('coal', coalMix, countryName);
+    changeBarEnergyMix('oil', oilMix, countryName);
+    changeBarEnergyMix('gas', gasMix, countryName);
+    changeBarEnergyMix('nuclear', nuclearMix, countryName);
+    changeBarEnergyMix('hydro', hydroMix, countryName);
+    changeBarEnergyMix('solar', solarMix, countryName);
+    changeBarEnergyMix('wind', windMix, countryName);
+
     // H1 : Name and capital
     $('#countryName').html(countryName);
     $('#countryCapital').html(capitalName);
@@ -413,4 +422,18 @@ function findRankByIndex(object, countryName) {
     }
 
     return '?';
+}
+
+function changeBarEnergyMix(nameEnergy, data, countryName) {
+
+    var val = findIndexByCountry(data, countryName);
+
+    $('.' + nameEnergy + ' .energy-pourcentage .val').html(val);
+
+    if (val == '?') {
+        val = 0;
+    }
+
+    $('.' + nameEnergy + ' .load-container .load-bar').css('width', val + '%');
+
 }

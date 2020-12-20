@@ -1,334 +1,334 @@
-[
+var oilMix = [
     {
       "country": "Africa",
-      "index": "5.96%"
+      "index": "41.66"
     },
     {
       "country": "Algeria",
-      "index": "0.05%"
+      "index": "34.74"
     },
     {
       "country": "Argentina",
-      "index": "9.54%"
+      "index": "34.24"
     },
     {
       "country": "Australia",
-      "index": "1.99%"
+      "index": "33.43"
     },
     {
       "country": "Austria",
-      "index": "24.21%"
+      "index": "36.54"
     },
     {
       "country": "Azerbaijan",
-      "index": "2.13%"
+      "index": "32.79"
     },
     {
       "country": "Bangladesh",
-      "index": "0.42%"
+      "index": "20.81"
     },
     {
       "country": "Belarus",
-      "index": "0.27%"
+      "index": "30.06"
     },
     {
       "country": "Belgium",
-      "index": "0.10%"
+      "index": "50.91"
     },
     {
       "country": "Brazil",
-      "index": "28.70%"
+      "index": "38.14"
     },
     {
       "country": "Bulgaria",
-      "index": "4.08%"
+      "index": "28.51"
     },
     {
       "country": "Canada",
-      "index": "23.96%"
+      "index": "31.66"
     },
     {
       "country": "Chile",
-      "index": "11.23%"
+      "index": "45.87"
     },
     {
       "country": "China",
-      "index": "7.99%"
+      "index": "19.69"
     },
     {
       "country": "Colombia",
-      "index": "23.88%"
+      "index": "36.47"
     },
     {
       "country": "Croatia",
-      "index": "15.31%"
+      "index": "41.63"
     },
     {
       "country": "Cyprus",
-      "index": "0.00%"
+      "index": "95.07"
     },
     {
       "country": "Czechia",
-      "index": "1.05%"
+      "index": "25.16"
     },
     {
       "country": "Denmark",
-      "index": "0.02%"
+      "index": "47.77"
     },
     {
       "country": "Ecuador",
-      "index": "29.54%"
+      "index": "66.42"
     },
     {
       "country": "Egypt",
-      "index": "3.07%"
+      "index": "38.70"
     },
     {
       "country": "Estonia",
-      "index": "0.06%"
+      "index": "26.86"
     },
     {
       "country": "Europe",
-      "index": "6.73%"
+      "index": "36.27"
     },
     {
       "country": "Finland",
-      "index": "9.98%"
+      "index": "35.27"
     },
     {
       "country": "France",
-      "index": "5.39%"
+      "index": "32.54"
     },
     {
       "country": "Germany",
-      "index": "1.37%"
+      "index": "35.60"
     },
     {
       "country": "Greece",
-      "index": "3.12%"
+      "index": "58.99"
     },
     {
       "country": "Hong Kong",
-      "index": "0.00%"
+      "index": "70.05"
     },
     {
       "country": "Hungary",
-      "index": "0.20%"
+      "index": "37.14"
     },
     {
       "country": "Iceland",
-      "index": "54.63%"
+      "index": "18.40"
     },
     {
       "country": "India",
-      "index": "4.24%"
+      "index": "30.06"
     },
     {
       "country": "Indonesia",
-      "index": "1.70%"
+      "index": "37.98"
     },
     {
       "country": "Iran",
-      "index": "2.09%"
+      "index": "31.77"
     },
     {
       "country": "Iraq",
-      "index": "0.99%"
+      "index": "66.77"
     },
     {
       "country": "Ireland",
-      "index": "1.19%"
+      "index": "48.53"
     },
     {
       "country": "Israel",
-      "index": "0.02%"
+      "index": "44.64"
     },
     {
       "country": "Italy",
-      "index": "6.31%"
+      "index": "39.05"
     },
     {
       "country": "Japan",
-      "index": "3.53%"
+      "index": "40.34"
     },
     {
       "country": "Kazakhstan",
-      "index": "2.87%"
+      "index": "22.17"
     },
     {
       "country": "Kuwait",
-      "index": "0.00%"
+      "index": "47.75"
     },
     {
       "country": "Latvia",
-      "index": "11.83%"
+      "index": "49.20"
     },
     {
       "country": "Lithuania",
-      "index": "1.26%"
+      "index": "56.38"
     },
     {
       "country": "Luxembourg",
-      "index": "0.56%"
+      "index": "74.72"
     },
     {
       "country": "Malaysia",
-      "index": "5.66%"
+      "index": "36.83"
     },
     {
       "country": "Mexico",
-      "index": "2.75%"
+      "index": "42.63"
     },
     {
       "country": "Morocco",
-      "index": "1.19%"
+      "index": "59.81"
     },
     {
       "country": "Netherlands",
-      "index": "0.02%"
+      "index": "47.10"
     },
     {
       "country": "New Zealand",
-      "index": "24.89%"
+      "index": "38.96"
     },
     {
       "country": "North America",
-      "index": "5.18%"
+      "index": "38.41"
     },
     {
       "country": "North Macedonia",
-      "index": "9.27%"
+      "index": "40.68"
     },
     {
       "country": "Norway",
-      "index": "63.20%"
+      "index": "21.87"
     },
     {
       "country": "Oman",
-      "index": "0.00%"
+      "index": "40.07"
     },
     {
       "country": "Pakistan",
-      "index": "8.91%"
+      "index": "25.34"
     },
     {
       "country": "Peru",
-      "index": "24.24%"
+      "index": "43.61"
     },
     {
       "country": "Philippines",
-      "index": "4.25%"
+      "index": "45.03"
     },
     {
       "country": "Poland",
-      "index": "0.41%"
+      "index": "31.44"
     },
     {
       "country": "Portugal",
-      "index": "7.47%"
+      "index": "48.86"
     },
     {
       "country": "Qatar",
-      "index": "0.00%"
+      "index": "26.85"
     },
     {
       "country": "Romania",
-      "index": "10.04%"
+      "index": "33.07"
     },
     {
       "country": "Russia",
-      "index": "5.81%"
+      "index": "22.04"
     },
     {
       "country": "Saudi Arabia",
-      "index": "0.00%"
+      "index": "62.74"
     },
     {
       "country": "Singapore",
-      "index": "0.00%"
+      "index": "86.10"
     },
     {
       "country": "Slovakia",
-      "index": "5.76%"
+      "index": "25.86"
     },
     {
       "country": "Slovenia",
-      "index": "13.98%"
+      "index": "37.94"
     },
     {
       "country": "South Africa",
-      "index": "0.13%"
+      "index": "21.91"
     },
     {
       "country": "South Korea",
-      "index": "0.20%"
+      "index": "42.88"
     },
     {
       "country": "Spain",
-      "index": "3.93%"
+      "index": "47.53"
     },
     {
       "country": "Sri Lanka",
-      "index": "12.00%"
+      "index": "68.37"
     },
     {
       "country": "Sweden",
-      "index": "26.14%"
+      "index": "25.65"
     },
     {
       "country": "Switzerland",
-      "index": "27.37%"
+      "index": "39.31"
     },
     {
       "country": "Taiwan",
-      "index": "1.03%"
+      "index": "40.20"
     },
     {
       "country": "Thailand",
-      "index": "1.00%"
+      "index": "48.50"
     },
     {
       "country": "Trinidad and Tobago",
-      "index": "0.00%"
+      "index": "11.51"
     },
     {
       "country": "Turkey",
-      "index": "12.25%"
+      "index": "31.31"
     },
     {
       "country": "Turkmenistan",
-      "index": "0.01%"
+      "index": "21.56"
     },
     {
       "country": "Ukraine",
-      "index": "1.79%"
+      "index": "12.90"
     },
     {
       "country": "United Arab Emirates",
-      "index": "0.00%"
+      "index": "40.46"
     },
     {
       "country": "United Kingdom",
-      "index": "0.68%"
+      "index": "39.61"
     },
     {
       "country": "United States",
-      "index": "2.55%"
+      "index": "39.08"
     },
     {
       "country": "Uzbekistan",
-      "index": "3.25%"
+      "index": "5.05"
     },
     {
       "country": "Venezuela",
-      "index": "25.33%"
+      "index": "31.70"
     },
     {
       "country": "Vietnam",
-      "index": "14.19%"
+      "index": "25.92"
     },
     {
       "country": "World",
-      "index": "6.45%"
+      "index": "33.06"
     }
   ]
