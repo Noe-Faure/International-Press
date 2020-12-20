@@ -101,6 +101,11 @@ function selectionCountry () {
     $('.literacy-rate .rank .num').html(literacyRateRank);
     $('.literacy-rate .rank .span-nd').html(nthOfIndex(literacyRateRank));
 
+    // Climate
+    $('.global-emission .indice .val').html(findIndexByCountry(globalEmission, countryName));
+    $('.global-emission .rank .num').html(findRankByIndex(globalEmission, countryName));
+    $('.global-emission .rank .span-nd').html(nthOfIndex(findRankByIndex(globalEmission, countryName)));
+
     // H1 : Name and capital
     $('#countryName').html(countryName);
     $('#countryCapital').html(capitalName);
