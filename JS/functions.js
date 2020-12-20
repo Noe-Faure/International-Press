@@ -216,7 +216,15 @@ function openInformationIndex () {
         mainDialogBoxOpen = true;
         $('#mainDialogBox').css('opacity', '1');
         $('#mainDialogBox').css('display', 'block');
-        setTimeout(function(){ $('#mainDialogBox').css('transform', 'translateX(0)')}, 50);
+
+        if (menuSide == 'right') {
+            $('#mainDialogBox').css('padding', '1.5em calc(30vw + 2em - 10px) 1.5em 2em');
+            setTimeout(function(){ $('#mainDialogBox').css('transform', 'translateX(0)')}, 50);
+        }
+        else if (menuSide == 'left') {
+            $('#mainDialogBox').css('padding', '1.5em 2em 1.5em calc(30vw + 2em - 10px)');
+            setTimeout(function(){ $('#mainDialogBox').css('transform', 'translateX(calc(-7vw - 100px))')}, 50);
+        }
 
         // Bold selection
         $(this).closest('tr').addClass('selecting-information-index');
@@ -230,7 +238,14 @@ function openInformationIndex () {
 
         // Animation flip flop
         $('#mainDialogBox').css('transform', 'translateX(calc(100vw - 40px - 100px - 5em - 40px))');
-        setTimeout(function(){ $('#mainDialogBox').css('transform', 'translateX(0)')}, 300);
+        if (menuSide == 'right') {
+            $('#mainDialogBox').css('padding', '1.5em calc(30vw + 2em - 10px) 1.5em 2em');
+            setTimeout(function(){ $('#mainDialogBox').css('transform', 'translateX(0)')}, 150);
+        }
+        else if (menuSide == 'left') {
+            $('#mainDialogBox').css('padding', '1.5em 2em 1.5em calc(30vw + 2em - 10px)');
+            setTimeout(function(){ $('#mainDialogBox').css('transform', 'translateX(calc(-7vw - 100px))')}, 150);
+        }
 
         $(this).closest('tr').addClass('selecting-information-index');
         $(this).closest('td').prev('td').addClass('selecting-information-index');
