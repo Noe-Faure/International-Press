@@ -204,6 +204,7 @@ body {
 
 #switchMenuButton .active {
     background-color: #0f6fff;
+    background: linear-gradient(45deg, #0f6fff, #0f9bff);
     color: white;
     box-shadow: 0 1px 3px rgba(50, 50, 93, 0.15), 0 1px 0 rgba(0, 0, 0, 0.02);
 }
@@ -466,13 +467,48 @@ body {
 .update-date-of-indice {
     text-align: right;
 }
+
+#warConflict {
+    margin-top: 25px;
+    background-color: white;
+    /* border: 1px solid #dcdfe1; */
+    border-radius: 0.4em;
+    width: 100%;
+    box-shadow: 0 1px 3px rgba(50, 50, 93, 0.15), 0 1px 0 rgba(0, 0, 0, 0.02);
+    padding: 0.7em;
+    display: flex;
+    align-items: center;
+}
+
+#warConflict .war-icon {
+    height: calc(50px);
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+}
+
+#warConflict .war-info {
+    margin-left: 1em;
+}
+
+#warConflict .war-info h5 {
+    font-size: 0.8em;
+    line-height: 1.4em;
+    font-weight: 500;
+}
+
+#warConflict .war-info p {
+    font-size: 0.8em;
+    font-weight: 100;
+    margin-bottom: 0;
+}
+
 /* === Main page === */
 
 .action-button {
     position: absolute;
     display: flex;
     left: calc(100px + 20px);
-    background-color: #0f6fff;
+    background: linear-gradient(45deg, #0f6fff, #0f9bff);
     color: white;
     padding: 0.5rem 1.5rem 0.5rem 1.5rem;
     border-radius: 0.4rem;
@@ -484,10 +520,12 @@ body {
 }
 
 .action-button:hover {
+    background: linear-gradient(45deg, #0f6fff, #0b62e4);
     background-color: #0b62e4;
 }
 
 .action-button:active {
+    background: linear-gradient(45deg, #0050c8, #0050c8);
     background-color: #0050c8;
 }
 

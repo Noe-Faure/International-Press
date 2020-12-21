@@ -81,8 +81,7 @@ function selectionCountry () {
     // Currency
     var currencySymbol = findIndexByCountry(currency, countryName);
     $('.currency .indice').html(currencySymbol);
-    $('.currency .rank .num').html(findRankByCurrencySymblol(currencyRank, currencySymbol));
-    $('.currency .rank .span-nd').html(nthOfIndex(findRankByCurrencySymblol(currencyRank, currencySymbol)));
+    $('.currency .rank .num').html(findSymbolByCurrencyCode(currencySymbolList, currencySymbol));
 
     // Gini
     $('.gini .indice').html(findIndexByCountry(giniIndex, countryName));
@@ -424,6 +423,26 @@ function findRankByCurrencySymblol(object, symbol) {
             if (!!object[i].rank)
             {
                 return object[i].rank;
+            }
+            else 
+            {
+                return '?';
+            }
+        }
+    }
+
+    return '?';
+}
+
+function findSymbolByCurrencyCode(object, code) {
+
+    for (i = 0; i < object.length; i++)
+    {
+        if(object[i].code == code) {
+
+            if (!!object[i].symbol)
+            {
+                return object[i].symbol;
             }
             else 
             {
