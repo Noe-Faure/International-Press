@@ -478,6 +478,8 @@ body {
     padding: 0.7em;
     display: flex;
     align-items: center;
+
+    display: none;
 }
 
 #warConflict .war-icon {
