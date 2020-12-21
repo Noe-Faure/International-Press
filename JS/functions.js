@@ -137,6 +137,9 @@ function selectionCountry () {
     changeBarEnergyMix('solar', solarMix, countryName);
     changeBarEnergyMix('wind', windMix, countryName);
 
+    // War(s)
+    showOnGoingWars(onGoingWar, countryName);
+
     // H1 : Name and capital
     $('#countryName').html(countryName);
     $('#countryCapital').html(capitalName);
@@ -501,5 +504,27 @@ function changeBarEnergyMix(nameEnergy, data, countryName) {
     }
 
     $('.' + nameEnergy + ' .load-container .load-bar').css('width', val + '%');
+
+}
+
+function showOnGoingWars (object, countryName) {
+
+    // We loop in the object and look for the name of the country
+    for (i = 0; i < object.length; i++)
+    {
+        if(object[i].country == countryName) {
+
+            $('#warConflict').show();
+
+            $('.war-start').html(object[i].start);
+            $('#firstWarName').html(object[i].name);
+            $('#firstWarName').attr('href', object[i].link);
+
+            return 0;
+        }
+    }
+
+    $('#warConflict').hide();
+    return 0;
 
 }
