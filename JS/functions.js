@@ -56,6 +56,8 @@ function selectionCountry () {
     $('.country').removeClass('country-selection');
     $(this).addClass('country-selection');
 
+    animationPulse($(this));
+
     $('.alert-banner').hide()
     $('#flipFlopMenu').show();
 ;
@@ -161,6 +163,8 @@ function selectionCountry () {
 function deselectCountry () {
     menuRightOpen = false;
 
+    // Animation pulse
+    removePulseAnimation();
 
     $('#back-button').css('display', 'none');
     $('#back-button').css('opacity', '1');
@@ -575,4 +579,32 @@ function showOnGoingWars (object, countryName) {
         return 0;
     }
 
+}
+
+function animationPulse (currentElement) {
+
+    listOfBigcountries = ['US', 'BR', 'RU', 'CN', 'IN', 'AR', 'CL', 'AU', 'ID'];
+
+    // Animation
+    removePulseAnimation();
+
+    var pulse = currentElement.clone();
+
+    if (listOfBigcountries.includes(currentElement.attr('data-id')))
+    {
+        $(pulse).addClass('country-back-animation-for-big-countries');
+        $(pulse).insertBefore(currentElement);
+
+    }
+    else
+    {
+        $(pulse).addClass('country-back-animation');
+        $(pulse).insertBefore(currentElement);
+    }
+    
+}
+
+function removePulseAnimation () {
+    $('.country-back-animation').remove();
+    $('.country-back-animation-for-big-countries').remove();
 }

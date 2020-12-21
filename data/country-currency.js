@@ -816,7 +816,7 @@ var currency = [
         "index": "EUR"
     },
     {
-        "country": "SriLanka",
+        "country": "Sri Lanka",
         "index": "LKR"
     },
     {

@@ -820,8 +820,8 @@ var capitals = [
         "city": "Madrid"
     },
     {
-        "country": "SriLanka",
-        "city": null
+        "country": "Sri Lanka",
+        "city": "	Sri Jayawardenapura Kotte"
     },
     {
         "country": "Sudan",
@@ -862,6 +862,10 @@ var capitals = [
     {
         "country": "Thailand",
         "city": "Bangkok"
+    },
+    {
+        "country": "Taiwan",
+        "city": "Taipei"
     },
     {
         "country": "Dem. Rep. Congo",
