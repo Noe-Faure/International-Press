@@ -509,22 +509,70 @@ function changeBarEnergyMix(nameEnergy, data, countryName) {
 
 function showOnGoingWars (object, countryName) {
 
+    var listOfConlicts = [];
+
+    // Remove list of multi-conflicts
+    $('.multi-war').remove();
+
     // We loop in the object and look for the name of the country
     for (i = 0; i < object.length; i++)
     {
         if(object[i].country == countryName) {
 
-            $('#warConflict').show();
-
-            $('.war-start').html(object[i].start);
-            $('#firstWarName').html(object[i].name);
-            $('#firstWarName').attr('href', object[i].link);
-
-            return 0;
+            listOfConlicts.push(object[i]);
         }
     }
 
-    $('#warConflict').hide();
-    return 0;
+    // Check if country involve in a war
+    if (listOfConlicts.length != 0)
+    {
+        // Uni-War
+        if (listOfConlicts.length == 1) 
+        {
+            $('#warConflict').show();
+            $('#firstWarName').show();
+
+            $('#warConflict img').attr('src', 'img/war.svg');
+            $('#warTitleInfo').html('Ce pays est impliqué dans un conflit d\'importance depuis <span class="war-start"></span>');
+
+            $('.war-start').html(listOfConlicts[0].start);
+            $('#firstWarName').html(listOfConlicts[0].name);
+            $('#firstWarName').attr('href', listOfConlicts[0].link);
+
+            return 0;
+        }
+        // Multi-conflicts
+        else 
+        {
+            $('#warConflict').show();
+            $('#firstWarName').show();
+            $('#warTitleInfo').html('Ce pays est impliqué dans plusieurs conflits depuis <span class="war-start"></span>');
+            $('#warConflict img').attr('src', 'img/multi-wars.svg');
+            $('#warTitleInfo').html();
+
+            var olderWar = 9999;
+
+            // Loop in conflicts
+            for (j = 0; j < listOfConlicts.length; j++)
+            {
+                // Date : take the older one to show
+                if (listOfConlicts[j].start < olderWar)
+                {
+                    olderWar = listOfConlicts[j].start;
+                }
+
+                // Append wars
+                $('#firstWarName').hide();
+                $('#firstWarName').after('<a target="_blank" class="multi-war" href="' + listOfConlicts[j].link + '">' + listOfConlicts[j].name + '<br></a>');
+            }
+
+            $('.war-start').html(olderWar);
+            return 0;
+        }
+    }
+    else {
+        $('#warConflict').hide();
+        return 0;
+    }
 
 }
