@@ -29,7 +29,7 @@
 
 			// Actions on load
             $('.country').on('mouseenter', hoverCountry);
-            $('.country').on('mouseleave', eraseHoverCountry);
+			$('#currentCountryHover').on('mouseleave', eraseHoverCountry);
             $('#currentCountryHover').on('click', selectionCountry);
 			$('#back-button').on('click', deselectCountry);
 			$('#switchMenuButton .choice-button').on('click', changeSwitchMenuButton);

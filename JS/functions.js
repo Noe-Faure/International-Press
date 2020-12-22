@@ -15,7 +15,7 @@ function hoverCountry () {
 }
 
 function eraseHoverCountry () {
-    $(this).removeClass('country-hover');
+    $(this).children('path').remove();
 }
 
 function flipMenu() {
@@ -594,7 +594,7 @@ function showOnGoingWars (object, countryName) {
 
 function animationPulse (currentElement) {
 
-    listOfBigcountries = ['US', 'BR', 'RU', 'CN', 'IN', 'AR', 'CL', 'AU', 'ID'];
+    listOfBigcountries = ['US', 'BR', 'RU', 'CN', 'IN', 'AR', 'CL', 'AU', 'ID', 'CA'];
 
     // Animation
     removePulseAnimation();
