@@ -51,12 +51,14 @@ body {
     transform-box: fill-box;
     animation: pulse 1.5s linear infinite;
     transform-origin: 50% 50%;
+    pointer-events : none;
 }
 
 .country-back-animation-for-big-countries {
     transform-box: fill-box;
     animation: bigPulse 1.5s linear infinite;
     transform-origin: 50% 50%;
+    pointer-events : none;
 }
 
 .country:active {
