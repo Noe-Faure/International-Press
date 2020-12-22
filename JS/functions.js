@@ -67,7 +67,7 @@ function selectionCountry () {
     $('.country').removeClass('country-selection');
     selectedCountry.addClass('country-selection');
 
-    animationPulse(selectedCountry);
+    animationPulse(ghostCountry);
 
     $('.alert-banner').hide()
     $('#flipFlopMenu').show();
