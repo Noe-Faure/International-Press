@@ -5,7 +5,13 @@ var informationSwitchOpen = true;
 var menuSide = 'right';
 
 function hoverCountry () {
-    $(this).addClass('country-hover');
+
+    $('#currentCountryHover').empty();
+
+    var country = $(this).clone();
+    country.addClass('country-hover');
+
+    $('#currentCountryHover').append(country);
 }
 
 function eraseHoverCountry () {
@@ -53,19 +59,24 @@ function zoomOnCountry (e) {
 function selectionCountry () {
     menuRightOpen = true;
 
-    $('.country').removeClass('country-selection');
-    $(this).addClass('country-selection');
+    var ghostCountry = $(this).children('.country');
+    var ghostId = ghostCountry.attr('data-id');
+    var selectedCountry = $('.country[data-id="' + ghostId + '"]');
+    selectedCountry.css('fill', 'red !important');
 
-    animationPulse($(this));
+    $('.country').removeClass('country-selection');
+    selectedCountry.addClass('country-selection');
+
+    animationPulse(selectedCountry);
 
     $('.alert-banner').hide()
     $('#flipFlopMenu').show();
 ;
     // ====== Display informations ======
 
-    var countryName = $(this).attr('data-name');
+    var countryName = selectedCountry.attr('data-name');
     var capitalName = findInformation(countryName, capitals);
-    var abreviation = $(this).attr('data-id');
+    var abreviation = selectedCountry.attr('data-id');
 
     var pathFlag = 'url(svg-flags/' + abreviation.toLowerCase() + '.svg)';
     $('#currentFlag').css('background-image', pathFlag);
