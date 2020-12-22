@@ -14,6 +14,16 @@ function hoverCountry () {
     $('#currentCountryHover').append(country);
 }
 
+function activeCountry (countryActive) {
+
+    $('#currentCountryActive').empty();
+
+    var country = countryActive.clone();
+    country.addClass('country-selection');
+    $('#currentCountryActive').append(country);
+    animationPulse(country);
+}
+
 function eraseHoverCountry () {
     $(this).children('path').remove();
 }
@@ -62,12 +72,13 @@ function selectionCountry () {
     var ghostCountry = $(this).children('.country');
     var ghostId = ghostCountry.attr('data-id');
     var selectedCountry = $('.country[data-id="' + ghostId + '"]');
-    selectedCountry.css('fill', 'red !important');
 
-    $('.country').removeClass('country-selection');
-    selectedCountry.addClass('country-selection');
+    // Active display
+    //$('.country').removeClass('country-selection');
+    //selectedCountry.addClass('country-selection');
+    activeCountry(ghostCountry);
 
-    animationPulse(ghostCountry);
+    //animationPulse(ghostCountry);
 
     $('.alert-banner').hide()
     $('#flipFlopMenu').show();
