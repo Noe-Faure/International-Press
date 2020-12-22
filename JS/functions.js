@@ -197,6 +197,7 @@ function deselectCountry () {
     $('#vertical-right-bar').css('transform', 'translateX(30vw)');
     setTimeout(function(){ $('#vertical-right-bar').css('display', 'none')}, 50);
     closeInformationIndex ();
+    $('#currentCountryActive path').remove();
 }
 
 function backButtonAppartion () {
