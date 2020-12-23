@@ -109,7 +109,7 @@ function selectionCountry () {
     $('.currency .rank .num').html(findSymbolByCurrencyCode(currencySymbolList, currencySymbol));
 
     // Gini
-    $('.gini .indice').html(findIndexByCountry(giniIndex, countryName));
+    $('.gini .indice .val').html(findIndexByCountry(giniIndex, countryName));
     $('.gini .rank .num').html(findRankByIndex(giniIndex, countryName));
     $('.gini .rank .span-nd').html(nthOfIndex(findRankByIndex(giniIndex, countryName)));
 

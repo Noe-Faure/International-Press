@@ -145,6 +145,16 @@ var currencySymbolList = [
     "symbol": "RD$"
   },
   {
+    "name": "Franc CFA",
+    "code": "XAF",
+    "symbol": "CFA"
+  },
+  {
+    "name": "Franc CFA",
+    "code": "XOF",
+    "symbol": "CFA (eco)"
+  },
+  {
     "name": "Caraïbes orientales Dollar",
     "code": "XCD",
     "symbol": "$"
