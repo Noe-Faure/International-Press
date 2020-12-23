@@ -134,17 +134,20 @@ function selectionCountry () {
     $('.language .indice .val').html(listLanguage[1]);
 
     // Life expectancy
+    var lifeExpectancyVal = '?';
     if (findIndexByCountry(lifeExpectancy, countryName) != '?')
     {
-        var lifeExpectancyVal = Math.round(findIndexByCountry(lifeExpectancy, countryName));
-    }
-    else {
-        var lifeExpectancyVal = '?';
+        lifeExpectancyVal = Math.round(findIndexByCountry(lifeExpectancy, countryName));
     }
     var lifeExpectancyRank = findRankByIndex(lifeExpectancy, countryName);
     $('.life-expectancy .indice .val').html(lifeExpectancyVal);
     $('.life-expectancy .rank .num').html(lifeExpectancyRank);
     $('.life-expectancy .rank .span-nd').html(nthOfIndex(lifeExpectancyRank));
+
+    // Infant mortality
+    $('.infant-mortality .indice').html(findIndexByCountry(infantMortality, countryName));
+    $('.infant-mortality .num').html(findRankByIndex(infantMortality, countryName));
+    $('.infant-mortality .rank .span-nd').html(nthOfIndex(findRankByIndex(infantMortality, countryName)));
 
     // Literacy Rate
     var literacyRateVal = findIndexByCountry(literacyRate, countryName);
