@@ -178,7 +178,7 @@ function selectionCountry () {
     removeNoDataRow();
 
     // H1 : Name and capital
-    $('#countryName').html(countryName);
+    $('#countryName').html(findTranslateNameCountry(translateCountryNameEnFr, abreviation));
     $('#countryCapital').html(capitalName);
 
     $('#vertical-right-bar').css('display', 'block');
@@ -571,6 +571,22 @@ function changeBarEnergyMix(nameEnergy, data, countryName) {
 
     $('.' + nameEnergy + ' .load-container .load-bar').css('width', val + '%');
 
+}
+
+function findTranslateNameCountry(object, code) {
+
+    for (i = 0; i < object.length; i++)
+    {
+        if(object[i].code == code) {
+
+            if (!!object[i].frName)
+            {
+                return object[i].frName;
+            }
+        }
+    }
+
+    return 'Non diponible';
 }
 
 function showOnGoingWars (object, countryName) {
