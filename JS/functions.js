@@ -113,6 +113,11 @@ function selectionCountry () {
     $('.gini .rank .num').html(findRankByIndex(giniIndex, countryName));
     $('.gini .rank .span-nd').html(nthOfIndex(findRankByIndex(giniIndex, countryName)));
 
+    // Median Income
+    $('.medianIncome .indice').html(findMedianIncomeByCountry(medianIncome, countryName));
+    $('.medianIncome .rank .num').html(findRankByIndex(medianIncome, countryName));
+    $('.medianIncome .rank .span-nd').html(nthOfIndex(findRankByIndex(medianIncome, countryName)));
+
     // Democracy Index
     $('.political-regime .indice').html(findIndexByCountry(democracyIndex, countryName));
     $('.political-regime .rank .num').html(findRankByCountry(democracyIndex, countryName));
@@ -383,6 +388,31 @@ function findGdpByCountry(object, countryName) {
                 result = Math.floor(result / 1000000000);
                 result = result.toLocaleString();
                 result = result + ' Md$';
+
+                return result;
+            }
+            else 
+            {
+                return '?';
+            }
+        }
+    }
+
+    return '?';
+}
+
+function findMedianIncomeByCountry(object, countryName) {
+
+    for (i = 0; i < object.length; i++)
+    {
+        if(object[i].country == countryName) {
+
+            if (!!object[i].index)
+            {
+                // Treatment around
+                var result = object[i].index;
+                result = result.toLocaleString();
+                result = result + ' $';
 
                 return result;
             }
