@@ -37,6 +37,12 @@ function flipMenu() {
         $('#back-button').css('left', 'calc(100vw - 9rem + 5px)');
         $('#flipFlopMenu').css('left', 'calc(100vw - 5rem - 4px)');
 
+        // Smart Phone
+        if ($(window).width() < 900)
+        {
+            $('#vertical-right-bar').css('transform', 'translateX(calc(-50vw + 100px))');
+        }
+
         menuSide = 'left';
     }
     else if (menuSide == 'left')

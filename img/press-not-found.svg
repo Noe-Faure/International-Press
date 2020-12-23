@@ -3,62 +3,81 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 560 560" style="enable-background:new 0 0 560 560;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#CFE2FF;stroke:#0F6FFF;stroke-width:3;stroke-miterlimit:10;}
+	.st0{fill:url(#SVGID_1_);stroke:#0F6FFF;stroke-width:3;stroke-miterlimit:10;}
 	.st1{fill:none;}
-	.st2{fill:#0F6FFF;}
+	.st2{fill:#F2F2F2;}
 	.st3{font-family:'Helvetica-Bold';}
 	.st4{font-size:90px;}
 	.st5{letter-spacing:6;}
-	.st6{fill:#083880;}
-	.st7{fill:#CFE2FF;}
-	.st8{font-size:36px;}
-	.st9{fill:none;stroke:#0F6FFF;stroke-width:3;stroke-miterlimit:10;}
+	.st6{fill:url(#SVGID_2_);}
+	.st7{fill:url(#SVGID_3_);}
+	.st8{fill:url(#SVGID_4_);}
+	.st9{fill:#0F6FFF;}
+	.st10{fill:#CFE2FF;}
+	.st11{font-size:36px;}
+	.st12{fill:none;stroke:#0F6FFF;stroke-width:3;stroke-miterlimit:10;}
 </style>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="117" y1="280" x2="443" y2="280">
+	<stop  offset="0" style="stop-color:#0F9BFF"/>
+	<stop  offset="1" style="stop-color:#0F6FFF"/>
+</linearGradient>
 <path class="st0" d="M443,469.5H117v-379h306c11.1,0,20,9,20,20V469.5z"/>
 <rect x="131" y="109" class="st1" width="245" height="79"/>
 <text transform="matrix(1 0 0 1 131 173.7095)" class="st2 st3 st4 st5">404</text>
+<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="131" y1="328.5" x2="219" y2="328.5">
+	<stop  offset="0" style="stop-color:#0F6FFF"/>
+	<stop  offset="1" style="stop-color:#0B62E4"/>
+</linearGradient>
 <rect x="131" y="201" class="st6" width="88" height="255"/>
-<rect x="234" y="201" class="st6" width="195" height="18"/>
-<rect x="234" y="316" class="st6" width="195" height="18"/>
-<rect x="234" y="345.5" class="st2" width="195" height="4"/>
-<rect x="234" y="356.5" class="st2" width="195" height="4"/>
-<rect x="234" y="369.5" class="st2" width="195" height="4"/>
-<rect x="234" y="380.5" class="st2" width="195" height="4"/>
-<rect x="234" y="392" class="st2" width="195" height="4"/>
-<rect x="234" y="403" class="st2" width="195" height="4"/>
-<rect x="234" y="414" class="st2" width="195" height="4"/>
-<rect x="234" y="425.5" class="st2" width="195" height="4"/>
-<rect x="234" y="436.5" class="st2" width="195" height="4"/>
+<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="234" y1="210" x2="429" y2="210">
+	<stop  offset="0" style="stop-color:#0050C8"/>
+	<stop  offset="1" style="stop-color:#0F6FFF"/>
+</linearGradient>
+<rect x="234" y="201" class="st7" width="195" height="18"/>
+<linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="234" y1="325" x2="429" y2="325">
+	<stop  offset="0" style="stop-color:#0050C8"/>
+	<stop  offset="1" style="stop-color:#0F6FFF"/>
+</linearGradient>
+<rect x="234" y="316" class="st8" width="195" height="18"/>
+<rect x="234" y="345.5" class="st9" width="195" height="4"/>
+<rect x="234" y="356.5" class="st9" width="195" height="4"/>
+<rect x="234" y="369.5" class="st9" width="195" height="4"/>
+<rect x="234" y="380.5" class="st9" width="195" height="4"/>
+<rect x="234" y="392" class="st9" width="195" height="4"/>
+<rect x="234" y="403" class="st9" width="195" height="4"/>
+<rect x="234" y="414" class="st9" width="195" height="4"/>
+<rect x="234" y="425.5" class="st9" width="195" height="4"/>
+<rect x="234" y="436.5" class="st9" width="195" height="4"/>
 <g>
-	<rect x="340.5" y="236" class="st2" width="88.5" height="4"/>
-	<rect x="234" y="236" class="st2" width="88.5" height="4"/>
-	<rect x="340.5" y="247" class="st2" width="88.5" height="4"/>
-	<rect x="234" y="247" class="st2" width="88.5" height="4"/>
-	<rect x="234" y="260" class="st2" width="88.5" height="4"/>
-	<rect x="340.5" y="260" class="st2" width="88.5" height="4"/>
-	<rect x="234" y="271" class="st2" width="88.5" height="4"/>
-	<rect x="340.5" y="271" class="st2" width="88.5" height="4"/>
-	<rect x="234" y="282.5" class="st2" width="88.5" height="4"/>
-	<rect x="340.5" y="282.5" class="st2" width="88.5" height="4"/>
-	<rect x="340.5" y="293.5" class="st2" width="88.5" height="4"/>
-	<rect x="234" y="293.5" class="st2" width="88.5" height="4"/>
+	<rect x="340.5" y="236" class="st9" width="88.5" height="4"/>
+	<rect x="234" y="236" class="st9" width="88.5" height="4"/>
+	<rect x="340.5" y="247" class="st9" width="88.5" height="4"/>
+	<rect x="234" y="247" class="st9" width="88.5" height="4"/>
+	<rect x="234" y="260" class="st9" width="88.5" height="4"/>
+	<rect x="340.5" y="260" class="st9" width="88.5" height="4"/>
+	<rect x="234" y="271" class="st9" width="88.5" height="4"/>
+	<rect x="340.5" y="271" class="st9" width="88.5" height="4"/>
+	<rect x="234" y="282.5" class="st9" width="88.5" height="4"/>
+	<rect x="340.5" y="282.5" class="st9" width="88.5" height="4"/>
+	<rect x="340.5" y="293.5" class="st9" width="88.5" height="4"/>
+	<rect x="234" y="293.5" class="st9" width="88.5" height="4"/>
 </g>
-<rect x="139.4" y="210" class="st7" width="71.2" height="15.9"/>
-<rect x="139.4" y="251" class="st7" width="71.2" height="4"/>
-<text transform="matrix(1 0 0 1 318.4993 138.5)"><tspan x="0" y="0" class="st2 st3 st8">Not</tspan><tspan x="0" y="36" class="st2 st3 st8">Found</tspan></text>
-<rect x="139.4" y="260" class="st7" width="71.2" height="4"/>
-<rect x="139.4" y="269" class="st7" width="71.2" height="4"/>
-<rect x="139.4" y="278" class="st7" width="71.2" height="4"/>
-<rect x="139.4" y="287" class="st7" width="71.2" height="4"/>
-<rect x="139.4" y="314" class="st7" width="71.2" height="4"/>
-<rect x="139.4" y="323" class="st7" width="71.2" height="4"/>
-<rect x="139.4" y="332" class="st7" width="71.2" height="4"/>
-<rect x="139.4" y="341" class="st7" width="71.2" height="4"/>
-<rect x="139.4" y="350" class="st7" width="71.2" height="4"/>
-<rect x="139.4" y="377" class="st7" width="71.2" height="4"/>
-<rect x="139.4" y="386" class="st7" width="71.2" height="4"/>
-<rect x="139.4" y="395" class="st7" width="71.2" height="4"/>
-<rect x="139.4" y="404" class="st7" width="71.2" height="4"/>
-<rect x="139.4" y="413" class="st7" width="71.2" height="4"/>
-<polygon class="st9" points="443,110.5 451.7,110.5 451.7,479.3 131,479.3 131,469.5 443,469.5 "/>
+<rect x="139.4" y="210" class="st10" width="71.2" height="15.9"/>
+<rect x="139.4" y="251" class="st10" width="71.2" height="4"/>
+<text transform="matrix(1 0 0 1 318.4993 138.5)"><tspan x="0" y="0" class="st2 st3 st11">Not</tspan><tspan x="0" y="36" class="st2 st3 st11">Found</tspan></text>
+<rect x="139.4" y="260" class="st10" width="71.2" height="4"/>
+<rect x="139.4" y="269" class="st10" width="71.2" height="4"/>
+<rect x="139.4" y="278" class="st10" width="71.2" height="4"/>
+<rect x="139.4" y="287" class="st10" width="71.2" height="4"/>
+<rect x="139.4" y="314" class="st10" width="71.2" height="4"/>
+<rect x="139.4" y="323" class="st10" width="71.2" height="4"/>
+<rect x="139.4" y="332" class="st10" width="71.2" height="4"/>
+<rect x="139.4" y="341" class="st10" width="71.2" height="4"/>
+<rect x="139.4" y="350" class="st10" width="71.2" height="4"/>
+<rect x="139.4" y="377" class="st10" width="71.2" height="4"/>
+<rect x="139.4" y="386" class="st10" width="71.2" height="4"/>
+<rect x="139.4" y="395" class="st10" width="71.2" height="4"/>
+<rect x="139.4" y="404" class="st10" width="71.2" height="4"/>
+<rect x="139.4" y="413" class="st10" width="71.2" height="4"/>
+<polygon class="st12" points="443,110.5 451.7,110.5 451.7,479.3 131,479.3 131,469.5 443,469.5 "/>
 </svg>
