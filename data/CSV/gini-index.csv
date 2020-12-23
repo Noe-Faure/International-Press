@@ -1,0 +1,164 @@
+country, code, year, index
+Czechia,CZE,1988,19.4
+Slovakia,SVK,1988,19.5
+Hungary,HUN,1987,21
+Latvia,LVA,1988,22.5
+Lithuania,LTU,1988,22.5
+Croatia,HRV,1988,22.8
+Estonia,EST,1988,23
+Slovenia,SVN,1987,23.6
+Denmark,DNK,2004,24.9
+Bangladesh,BGD,1983,25.9
+Sweden,SWE,2004,26.1
+Poland,POL,1993,26.7
+Albania,ALB,1996,27
+Finland,FIN,2004,27.9
+Iceland,ISL,2004,28
+Iraq,IRQ,2006,28.6
+Rwanda,RWA,1984,28.9
+Kosovo,OWID_KOS,2003,29
+Tajikistan,TJK,1999,29.5
+Austria,AUT,2004,29.8
+Netherlands,NLD,2004,29.8
+Bosnia and Herzegovina,BIH,2001,30
+Cyprus,CYP,2004,30.1
+Luxembourg,LUX,2004,30.2
+Montenegro,MNE,2005,30.2
+Belgium,BEL,2004,30.5
+France,FRA,2004,30.6
+Bulgaria,BGR,1992,30.7
+Romania,ROU,1998,31.1
+Australia,AUS,1981,31.3
+Norway,NOR,2004,31.6
+South Korea,KOR,2006,31.7
+Germany,DEU,2006,31.8
+Lebanon,LBN,2011,31.8
+Egypt,EGY,1990,32
+Serbia,SRB,2002,32
+Japan,JPN,2008,32.1
+Sao Tome and Principe,STP,2000,32.1
+Belarus,BLR,1998,32.3
+Canada,CAN,1981,32.4
+Sri Lanka,LKA,1985,32.5
+Mongolia,MNG,1995,33.2
+Burundi,BDI,1992,33.3
+Pakistan,PAK,1987,33.3
+Spain,ESP,2004,33.3
+Greece,GRC,2004,33.6
+Ireland,IRL,2004,33.6
+Palestine,PSE,2004,34
+Italy,ITA,2004,34.3
+Laos,LAO,1992,34.3
+Switzerland,CHE,2007,34.3
+United States,USA,1979,34.6
+Azerbaijan,AZE,1995,34.7
+Yemen,YEM,1998,35
+India,IND,2011,35.2
+Nepal,NPL,1995,35.2
+Ghana,GHA,1987,35.3
+Tanzania,TZA,1991,35.3
+Kazakhstan,KAZ,1996,35.4
+Sudan,SDN,2009,35.4
+Mauritius,MUS,2006,35.7
+Vietnam,VNM,1992,35.7
+Syria,SYR,2004,35.8
+Timor,TLS,2001,35.9
+United Kingdom,GBR,2004,36
+Jordan,JOR,1986,36.1
+Niger,NER,1992,36.1
+Armenia,ARM,1999,36.2
+Israel,ISR,1979,36.3
+Liberia,LBR,2007,36.5
+Moldova,MDA,1997,36.9
+Kiribati,KIR,2006,37
+Georgia,GEO,1996,37.1
+Vanuatu,VUT,2010,37.3
+Tonga,TON,2001,37.7
+Fiji,FJI,2002,38.1
+Myanmar,MMR,2015,38.1
+Benin,BEN,2003,38.6
+Nigeria,NGA,1985,38.7
+Portugal,PRT,2004,38.9
+Tuvalu,TUV,2010,39.1
+Morocco,MAR,1984,39.2
+Ukraine,UKR,1995,39.3
+Indonesia,IDN,2013,39.5
+Chad,TCD,2003,39.8
+Djibouti,DJI,2002,40
+Algeria,DZA,1988,40.2
+Sierra Leone,SLE,2003,40.2
+Argentina,ARG,1980,40.8
+Paraguay,PRY,1990,40.8
+Turkmenistan,TKM,1998,40.8
+Haiti,HTI,2012,40.9
+Philippines,PHL,1985,41
+Maldives,MDV,2002,41.3
+Bolivia,BOL,1990,42
+Samoa,WSM,2008,42
+Democratic Republic of Congo,COD,2004,42.2
+Gabon,GAB,2005,42.2
+Togo,TGO,2006,42.2
+Micronesia (country),FSM,2005,42.4
+Saint Lucia,LCA,1995,42.6
+Trinidad and Tobago,TTO,1988,42.6
+Angola,AGO,2008,42.7
+China,CHN,2008,42.8
+North Macedonia,MKD,2010,42.8
+Jamaica,JAM,1988,43.2
+Zimbabwe,ZWE,2011,43.2
+Tunisia,TUN,1985,43.4
+Turkey,TUR,1987,43.5
+Guinea-Bissau,GNB,1993,43.6
+Uruguay,URY,1981,43.7
+Mauritania,MRT,1987,43.9
+Mozambique,MOZ,1996,44.4
+Uganda,UGA,1989,44.4
+Cameroon,CMR,1996,44.5
+Guyana,GUY,1998,44.5
+Ethiopia,ETH,1995,44.6
+Uzbekistan,UZB,1998,44.7
+Thailand,THA,1981,45.2
+Cote d'Ivoire,CIV,1985,45.5
+Solomon Islands,SLB,2005,46.1
+South Sudan,SSD,2009,46.3
+Bhutan,BTN,2003,46.8
+Guinea,GIN,1991,46.8
+Madagascar,MDG,1980,46.8
+Seychelles,SYC,2013,46.8
+Congo,COG,2005,47.3
+Iran,IRN,1986,47.4
+Costa Rica,CRI,1981,47.5
+Dominican Republic,DOM,1986,47.8
+Burkina Faso,BFA,1994,48.1
+Russia,RUS,1993,48.4
+Gambia,GMB,1998,48.5
+Malaysia,MYS,1984,48.6
+Panama,PAN,1979,48.7
+Mexico,MEX,1984,49
+Mali,MLI,1994,50.4
+Ecuador,ECU,1987,50.5
+Colombia,COL,1992,51.5
+Cape Verde,CPV,2001,52.5
+Kyrgyzstan,KGZ,1993,53.7
+Peru,PER,1997,53.7
+El Salvador,SLV,1991,54
+Senegal,SEN,1991,54.1
+Botswana,BWA,1985,54.2
+Papua New Guinea,PNG,1996,55.4
+Venezuela,VEN,1981,55.6
+Comoros,COM,2004,55.9
+Lesotho,LSO,1986,56
+Chile,CHL,1987,56.2
+Nicaragua,NIC,1993,57.4
+Kenya,KEN,1992,57.5
+Suriname,SUR,1999,57.6
+Brazil,BRA,1981,58
+Guatemala,GTM,1986,58.3
+South Africa,ZAF,1993,59.3
+Honduras,HND,1989,59.5
+Belize,BLZ,1993,60.3
+Eswatini,SWZ,1994,60.5
+Zambia,ZMB,1991,60.5
+Central African Republic,CAF,1992,61.3
+Namibia,NAM,2003,63.3
+Malawi,MWI,1997,65.8

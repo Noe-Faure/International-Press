@@ -134,6 +134,10 @@ body {
     color: #0f6fff !important;
     border-right: 2px solid #0f6fff !important;
     background: linear-gradient(-90deg, #0b62e412, transparent);
+    background: -webkit-linear-gradient(-90deg, #0b62e412, transparent);   
+    background:    -moz-linear-gradient(-90deg, #0b62e412, transparent);
+    background:     -ms-linear-gradient(-90deg, #0b62e412, transparent);
+    background:      -o-linear-gradient(-90deg, #0b62e412, transparent);
 }
 
 .left-navbar-container {
@@ -220,6 +224,10 @@ body {
 #switchMenuButton .active {
     background-color: #0f6fff;
     background: linear-gradient(45deg, #0f6fff, #0f9bff);
+    background: -webkit-linear-gradient(45deg, #0f6fff, #0f9bff);   
+    background:    -moz-linear-gradient(45deg, #0f6fff, #0f9bff);
+    background:     -ms-linear-gradient(45deg, #0f6fff, #0f9bff);
+    background:      -o-linear-gradient(45deg, #0f6fff, #0f9bff);
     color: white;
     box-shadow: 0 1px 3px rgba(50, 50, 93, 0.15), 0 1px 0 rgba(0, 0, 0, 0.02);
 }
@@ -366,6 +374,10 @@ body {
     height: 0.4em;
     margin-top: 0.45em;
     background: linear-gradient(-45deg, rgb(11 98 228 / 0.2), transparent);
+    background: -webkit-linear-gradient(-45deg, rgb(11 98 228 / 0.2), transparent);   
+    background:    -moz-linear-gradient(-45deg, rgb(11 98 228 / 0.2), transparent);
+    background:     -ms-linear-gradient(-45deg, rgb(11 98 228 / 0.2), transparent);
+    background:      -o-linear-gradient(-45deg, rgb(11 98 228 / 0.2), transparent);
     border-radius: 0.4em;
 }
 
@@ -375,6 +387,10 @@ body {
     width: 30%;
     background-color: #FF9A8B;
     background-image: linear-gradient(90deg, #f70d76 0%, #fd2d4f 55%, #fe4c27 100%);
+    background: -webkit-linear-gradient(90deg, #f70d76 0%, #fd2d4f 55%, #fe4c27 100%);   
+    background:    -moz-linear-gradient(90deg, #f70d76 0%, #fd2d4f 55%, #fe4c27 100%);
+    background:     -ms-linear-gradient(90deg, #f70d76 0%, #fd2d4f 55%, #fe4c27 100%);
+    background:      -o-linear-gradient(90deg, #f70d76 0%, #fd2d4f 55%, #fe4c27 100%);
     border-radius: 04em;
     box-shadow: 0 0px 6px rgba(50, 50, 93, 0.15), 0 1px 0 rgba(0, 0, 0, 0.02);
 }
@@ -389,7 +405,7 @@ body {
 /* === Main Dialog Box === */
 
 #mainDialogBox {
-    width: calc(100vw - 40px - 100px - 6em - 60px);;
+    width: calc(100vw - 40px - 100px - 6em - 60px);
     height: calc(100vh);
     position: absolute;
     background-color: rgb(255 255 255 / 0.2);
@@ -458,7 +474,7 @@ body {
     font-weight: 100;
     padding-bottom: 1.3rem;
     padding-top: 0.3rem;
-    border-bottom: 1px solid rgba(0,0,0,.1);;
+    border-bottom: 1px solid rgba(0,0,0,.1);
 }
 
 #mainDialogBox .source-container .organism-label {
@@ -527,6 +543,10 @@ body {
     display: flex;
     left: calc(100px + 20px);
     background: linear-gradient(45deg, #0f6fff, #0f9bff);
+    background: -webkit-linear-gradient(45deg, #0f6fff, #0f9bff);   
+    background:    -moz-linear-gradient(45deg, #0f6fff, #0f9bff);
+    background:     -ms-linear-gradient(45deg, #0f6fff, #0f9bff);
+    background:      -o-linear-gradient(45deg, #0f6fff, #0f9bff);
     color: white;
     padding: 0.5rem 1.5rem 0.5rem 1.5rem;
     border-radius: 0.4rem;
@@ -539,11 +559,19 @@ body {
 
 .action-button:hover {
     background: linear-gradient(45deg, #0f6fff, #0b62e4);
+    background: -webkit-linear-gradient(45deg, #0f6fff, #0b62e4);  
+    background:    -moz-linear-gradient(45deg, #0f6fff, #0b62e4);
+    background:     -ms-linear-gradient(45deg, #0f6fff, #0b62e4);
+    background:      -o-linear-gradient(45deg, #0f6fff, #0b62e4);
     background-color: #0b62e4;
 }
 
 .action-button:active {
     background: linear-gradient(45deg, #0050c8, #0050c8);
+    background: -webkit-linear-gradient(45deg, #0050c8, #0050c8);  
+    background:    -moz-linear-gradient(45deg, #0050c8, #0050c8);
+    background:     -ms-linear-gradient(45deg, #0050c8, #0050c8);
+    background:      -o-linear-gradient(45deg, #0050c8, #0050c8);
     background-color: #0050c8;
 }
 

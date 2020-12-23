@@ -110,8 +110,8 @@ function selectionCountry () {
 
     // Gini
     $('.gini .indice').html(findIndexByCountry(giniIndex, countryName));
-    $('.gini .rank .num').html(findRankByCountry(giniIndex, countryName));
-    $('.gini .rank .span-nd').html(nthOfIndex(findRankByCountry(giniIndex, countryName)));
+    $('.gini .rank .num').html(findRankByIndex(giniIndex, countryName));
+    $('.gini .rank .span-nd').html(nthOfIndex(findRankByIndex(giniIndex, countryName)));
 
     // Democracy Index
     $('.political-regime .indice').html(findIndexByCountry(democracyIndex, countryName));
@@ -315,7 +315,7 @@ function searchInMap () {
     if (searchInput != '')
     {
         $("#allCountriesSvg path").each(function() {
-            let pathCountry = $(this);
+            var pathCountry = $(this);
             var country = pathCountry.data('name').toLowerCase();
             var capitalName = findInformation(country, capitals).toLowerCase();
 
