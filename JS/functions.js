@@ -682,4 +682,12 @@ function removeNoDataRow () {
             $(this).parent('tr').hide();
         }
     });
+
+    if ($('.energy-pourcentage .val').first().html() == '?') {
+        $('#energyMix').hide();
+    }
+    else
+    {
+        $('#energyMix').show();
+    }
 }
