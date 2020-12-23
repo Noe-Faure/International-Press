@@ -170,6 +170,10 @@ function selectionCountry () {
     // War(s)
     showOnGoingWars(onGoingWar, countryName);
 
+    //Erase when no-data in a row
+    $('.indice').parent('tr').show();
+    removeNoDataRow();
+
     // H1 : Name and capital
     $('#countryName').html(countryName);
     $('#countryCapital').html(capitalName);
@@ -670,4 +674,12 @@ function resizeSmartphone () {
     {
         $('#vertical-right-bar').css('transform', 'translateX(calc(-50vw + 100px))');
     }
+}
+
+function removeNoDataRow () {
+    $('.indice').each(function() {
+        if ($(this).html() == '?') {
+            $(this).parent('tr').hide();
+        }
+    });
 }
