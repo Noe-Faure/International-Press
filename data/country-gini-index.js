@@ -714,7 +714,7 @@ var giniIndex = [
     "index": 45.2
   },
   {
-    "country": "Cote d'Ivoire",
+    "country": "Côte d'Ivoire",
     "code": "CIV",
     "year": 1985,
     "index": 45.5

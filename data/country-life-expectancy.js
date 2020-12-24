@@ -1002,7 +1002,7 @@ var lifeExpectancy = [
       "female": "66.5220"
     },
     {
-      "country": "Republic of the Congo",
+      "country": "Congo",
       "index": "64.5800",
       "male": "63.0880",
       "female": "66.0340"

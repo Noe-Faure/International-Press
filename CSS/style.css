@@ -290,10 +290,18 @@ body {
     transition: 0.2;
 }
 
-.check-level-3 {
+.check-level-1 {
     color: #41cc59;
     font-size: 1.3em;
-    text-align: center;
+    text-align: right;
+    padding-right: 0.5em;
+}
+
+.uncheck-level-1 {
+    color: #fb235d;
+    font-size: 1.3em;
+    text-align: right;
+    padding-right: 0.5em;
 }
 
 .span-nd {

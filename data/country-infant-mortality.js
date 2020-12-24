@@ -985,7 +985,7 @@ var infantMortality = [
       "pop2020": "12123.2"
     },
     {
-      "country": "Republic of the Congo",
+      "country": "Congo",
       "index": 54.9,
       "pop2020": "5518.0870"
     },
@@ -1040,7 +1040,7 @@ var infantMortality = [
       "pop2020": "32866.2720"
     },
     {
-      "country": "DR Congo",
+      "country": "Dem. Rep. Congo",
       "index": 68.2,
       "pop2020": "89561.4030"
     },
