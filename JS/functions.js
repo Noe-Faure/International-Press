@@ -739,6 +739,9 @@ function removeNoDataRow () {
         if ($(this).html() == '?') {
             $(this).parent('tr').hide();
         }
+        else if ($(this).children('.val').html() == '?') {
+            $(this).parent('tr').hide();
+        }
     });
 
     if ($('.energy-pourcentage .val').first().html() == '?') {
