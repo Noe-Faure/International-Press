@@ -230,7 +230,13 @@ var onGoingWar = [
     {
       "start": 1948,
       "name": "Israeli–Palestinian conflict",
-      "country": "Gaza Strip",
+      "country": "Israel",
+      "link": "https://en.wikipedia.org/wiki/Israeli%E2%80%93Palestinian_conflict"
+    },
+    {
+      "start": 1948,
+      "name": "Israeli–Palestinian conflict",
+      "country": "Palestine",
       "link": "https://en.wikipedia.org/wiki/Israeli%E2%80%93Palestinian_conflict"
     },
     {

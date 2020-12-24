@@ -410,6 +410,18 @@ body {
     width: 30%;
 }
 
+.extend-category {
+    float: right;
+    margin-right: 0.35em;
+    opacity: 0.4;
+    display: none;
+}
+
+.separator-clash {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
 /* === Main Dialog Box === */
 
 #mainDialogBox {

@@ -175,6 +175,7 @@ function selectionCountry () {
 
     // War(s)
     showOnGoingWars(onGoingWar, countryName);
+    showOnGoingClashes(countryClashes, countryName);
 
     //Erase when no-data in a row
     $('.indice').parent('tr').show();
@@ -654,7 +655,7 @@ function showOnGoingWars (object, countryName) {
             $('#firstWarName').show();
 
             $('#warConflict img').attr('src', 'img/war.svg');
-            $('#warTitleInfo').html('Ce pays est impliqué dans un conflit d\'importance depuis <span class="war-start"></span>');
+            $('#warTitleInfo .text').html('Ce pays est impliqué dans un conflit d\'importance depuis');
 
             $('.war-start').html(listOfConlicts[0].start);
             $('#firstWarName').html(listOfConlicts[0].name);
@@ -667,7 +668,8 @@ function showOnGoingWars (object, countryName) {
         {
             $('#warConflict').show();
             $('#firstWarName').show();
-            $('#warTitleInfo').html('Ce pays est impliqué dans plusieurs conflits depuis <span class="war-start"></span>');
+            $('#warTitleInfo .text').html('Ce pays est impliqué dans plusieurs conflits depuis ');
+            $('.war-start').show();
             $('#warConflict img').attr('src', 'img/multi-wars.svg');
             $('#warTitleInfo').html();
 
@@ -696,6 +698,50 @@ function showOnGoingWars (object, countryName) {
         return 0;
     }
 
+}
+
+// Should be call after showOnGoingWars function
+function showOnGoingClashes (object, countryName) {
+
+    var listOfClashes = [];
+    $('#clashContainer').empty();
+
+    // We loop in the object and look for the name of the country
+    for (i = 0; i < object.length; i++)
+    {
+        if(object[i].country == countryName) {
+
+            listOfClashes.push(object[i]);
+        }
+    }
+
+    if (listOfClashes.length != 0) 
+    {
+        // Check if there also war important war in this country
+        if ($('#warConflict').css('display') == 'flex')
+        {
+            $('#clashContainer').append('<hr class="separator-clash">');
+            for (j = 0; j < listOfClashes.length; j++)
+            {
+                $('#clashContainer hr').after('<a target="_blank" class="multi-war" href="' + listOfClashes[j].link + '">' + listOfClashes[j].name + '<br></a>');
+            }
+        }
+        // No massive war
+        else
+        {
+            $('.war-info .text').html('Ce pays subit des heurts qui ont fait moins de 100 victimes directes en 2020');
+            $('.war-start').hide();
+            for (j = 0; j < listOfClashes.length; j++)
+            {
+                $('#clashContainer').append('<a target="_blank" class="multi-war" href="' + listOfClashes[j].link + '">' + listOfClashes[j].name + '<br></a>');
+            }
+
+            $('#firstWarName').hide();
+
+            $('#warConflict img').attr('src', 'img/gun.svg');
+            $('#warConflict').show();
+        }
+    }
 }
 
 function animationPulse (currentElement) {
