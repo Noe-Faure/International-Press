@@ -655,7 +655,7 @@ function showOnGoingWars (object, countryName) {
             $('#firstWarName').show();
 
             $('#warConflict img').attr('src', 'img/war.svg');
-            $('#warTitleInfo .text').html('Ce pays est impliqué dans un conflit d\'importance depuis');
+            $('#warTitleInfo .text').html('Ce pays est impliqué dans une guerre d\'importance depuis');
 
             $('.war-start').html(listOfConlicts[0].start);
             $('#firstWarName').html(listOfConlicts[0].name);
@@ -668,7 +668,7 @@ function showOnGoingWars (object, countryName) {
         {
             $('#warConflict').show();
             $('#firstWarName').show();
-            $('#warTitleInfo .text').html('Ce pays est impliqué dans plusieurs conflits depuis ');
+            $('#warTitleInfo .text').html('Ce pays est impliqué dans plusieurs guerres depuis ');
             $('.war-start').show();
             $('#warConflict img').attr('src', 'img/multi-wars.svg');
             $('#warTitleInfo').html();
