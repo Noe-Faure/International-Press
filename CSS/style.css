@@ -1,10 +1,37 @@
 body {
     background-color: #f2f6fa !important;
+    overflow: hidden;
 }
 
 .disabled {
     opacity: 0.2 !important;
     cursor: no-drop !important;
+}
+
+/* === Scroll Bars === */
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    margin-top: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+background: rgba(0, 0, 0, 0.02); 
+padding-top: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #888;
+border-radius: 1em;
+cursor: pointer;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #555; 
 }
 
 /* === Map === */
@@ -310,9 +337,11 @@ body {
 }
 
 #informationContainerScroll {
+    margin-top: 25px;
+    margin-bottom: 25px;
     overflow-y: scroll;
     width: 100%;
-    height: calc(100vh - 4em - 2rem - 1px - 75px);
+    height: calc(100vh - 4em - 2rem - 1px - 100px);
 
     /* Scroll bar width */
     padding-right: 15px;
@@ -464,7 +493,6 @@ body {
 #mainDialogBox h3 {
     font-size: 1.2em;
     font-weight: 500;
-    margin-top: 1.5em;
     margin-bottom: 1em;
 }
 
@@ -509,10 +537,11 @@ body {
 
 #containerDescriptionIndex {
     overflow-y: scroll;
-    height: calc(100vh - (1.5em*2 + 1.5em + 0.5em + 0.8em + 2rem + 3.8rem));
+    height: calc(100vh - (1.5em*2 + 3.5em + 0.8em + 2rem + 3.8rem));
 
     /* Scroll bar width */
     padding-right: 20px;
+    margin-top: 1.5em;
 
 }
 
@@ -521,7 +550,6 @@ body {
 }
 
 #warConflict {
-    margin-top: 25px;
     background-color: white;
     /* border: 1px solid #dcdfe1; */
     border-radius: 0.4em;

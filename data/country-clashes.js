@@ -102,6 +102,12 @@ var countryClashes = [
       "link": "https://en.wikipedia.org/wiki/Dissident_Irish_republican_campaign"
     },
     {
+        "start": 1998,
+        "name": "Dissident Irish Republican campaign",
+        "country": "Ireland",
+        "link": "https://en.wikipedia.org/wiki/Dissident_Irish_republican_campaign"
+      },
+    {
       "start": 2005,
       "name": "Insurgency in Paraguay",
       "country": "Paraguay",
