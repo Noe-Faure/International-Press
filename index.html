@@ -65,7 +65,7 @@
 				<path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
 				<path fill-rule="evenodd" d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
 			  </svg></span>
-			Nom de l'indice</h1>
+			<span id="DialogBoxIndexName">Nom de l'indice</span></h1>
 		<div class="maj-index-container">
 			<div>
 				<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-clock" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -73,8 +73,8 @@
 					<path fill-rule="evenodd" d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5z"/>
 				</svg>
 			</div>
-			<div>&nbsp; Date de mis à jour de l'indice : </div>
-			<div class="update-date-of-indice">&nbsp; 24 décembre 2020</div>
+			<div>&nbsp; Date de mis à jour de l'indice : &nbsp;</div>
+			<div class="update-date-of-indice">24 décembre 2020</div>
 		</div>
 		<hr>
 		<div class="source-container">
@@ -84,16 +84,16 @@
 				<path d="M4 11a1 1 0 1 1 2 0v1a1 1 0 1 1-2 0v-1zm6-4a1 1 0 1 1 2 0v5a1 1 0 1 1-2 0V7zM7 9a1 1 0 0 1 2 0v3a1 1 0 1 1-2 0V9z"/>
 			  </svg>
 			  <span class="organism-label">&nbsp; Organisme :</span>
-			  <span>The Economist</span>
-			  <a href="#" class="source-link">Source officielle</a>
+			  <span id="DialogBoxIndexOrganism">The Economist</span>
+			  <a href="#" class="source-link" target="_blank">Source officielle</a>
 		</div>
 		<div id="containerDescriptionIndex">
 		<h3>Présentation de l'indice</h3>
-			<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam esse soluta voluptates aspernatur cupiditate autem, amet pariatur dignissimos ipsum, nobis quam consectetur veniam quasi unde expedita tenetur voluptate? Nulla, nihil? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint veniam alias magni illo voluptate error maxime delectus. Non ad adipisci labore autem magni architecto, nemo, aperiam sit eligendi perferendis perspiciatis!</p>
+			<p class="presentation">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam esse soluta voluptates aspernatur cupiditate autem, amet pariatur dignissimos ipsum, nobis quam consectetur veniam quasi unde expedita tenetur voluptate? Nulla, nihil? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint veniam alias magni illo voluptate error maxime delectus. Non ad adipisci labore autem magni architecto, nemo, aperiam sit eligendi perferendis perspiciatis!</p>
 			<h3>Organisme fournissant l'indicateur</h3>
-			<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam esse soluta voluptates aspernatur cupiditate autem, amet pariatur dignissimos ipsum, nobis quam consectetur veniam quasi unde expedita tenetur voluptate? Nulla, nihil? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint veniam alias magni illo voluptate error maxime delectus. Non ad adipisci labore autem magni architecto, nemo, aperiam sit eligendi perferendis perspiciatis!</p>
+			<p class="organism">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam esse soluta voluptates aspernatur cupiditate autem, amet pariatur dignissimos ipsum, nobis quam consectetur veniam quasi unde expedita tenetur voluptate? Nulla, nihil? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint veniam alias magni illo voluptate error maxime delectus. Non ad adipisci labore autem magni architecto, nemo, aperiam sit eligendi perferendis perspiciatis!</p>
 			<h3>Autres indicateurs</h3>
-			<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam esse soluta voluptates aspernatur cupiditate autem, amet pariatur dignissimos ipsum, nobis quam consectetur veniam quasi unde expedita tenetur voluptate? Nulla, nihil? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint veniam alias magni illo voluptate error maxime delectus. Non ad adipisci labore autem magni architecto, nemo, aperiam sit eligendi perferendis perspiciatis!</p>
+			<p class="other-index">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam esse soluta voluptates aspernatur cupiditate autem, amet pariatur dignissimos ipsum, nobis quam consectetur veniam quasi unde expedita tenetur voluptate? Nulla, nihil? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint veniam alias magni illo voluptate error maxime delectus. Non ad adipisci labore autem magni architecto, nemo, aperiam sit eligendi perferendis perspiciatis!</p>
 		</div>
 	</div>
 
@@ -197,7 +197,7 @@
         <div id="economicalInformations" class="collapse show">
             <table class="table-informations">
                 <tr class="gross-domestic-product">
-                    <td>PIB Nominal </td>
+                    <td class="index-name">PIB Nominal</td>
                     <td class="indice"></td>
                     <td class="rank">(<span class="num">144</span> <span class="span-nd">ème</span>)</td>
                     <td class="information">
@@ -211,7 +211,7 @@
                     </td>
                 </tr>
                 <tr class="currency">
-                    <td>Devise</td>
+                    <td class="index-name">Devise</td>
                     <td class="indice">SDG</td>
                     <td class="rank"><span class="num">?</span></td>
                     <td class="information">
@@ -225,7 +225,7 @@
                     </td>
                 </tr>
                 <tr class="gini">
-                    <td>Indice de Gini</td>
+                    <td class="index-name">Indice de Gini</td>
                     <td class="indice"><span class="val">35.3</span><span> %</span></td>
                     <td class="rank">(<span class="num">135</span> <span class="span-nd">ème</span>)</td>
                     <td class="information">
@@ -239,7 +239,7 @@
                     </td>
 				</tr>
 				<tr class="medianIncome">
-                    <td>Revenu médian annuel</td>
+                    <td class="index-name">Revenu médian annuel</td>
                     <td class="indice">35.3</td>
                     <td class="rank">(<span class="num">135</span> <span class="span-nd">ème</span>)</td>
                     <td class="information">
@@ -273,7 +273,7 @@
         <div id="politicalInformations" class="collapse show">
             <table class="table-informations">
                 <tr class="freedom-of-press">
-                    <td>Liberté de la presse</td>
+                    <td class="index-name">Liberté de la presse</td>
                     <td class="indice">7,84</td>
                     <td class="rank">(<span class="num">134</span> <span class="span-nd">ème</span>)</td>
                     <td class="information">
@@ -287,8 +287,7 @@
                     </td>
                 </tr>
                 <tr class="political-regime">
-                    <td>Niveau démocratique</td>
-                    
+                    <td class="index-name">Niveau démocratique</td> 
                     <td class="indice">8,32</td>
                     <td class="rank">(<span class="num">129</span> <span class="span-nd">ème</span>)</td>
                     <td class="information">
@@ -302,7 +301,7 @@
                     </td>
                 </tr>
                 <tr class="corruption">
-                    <td>Perception de la corruption</td>
+                    <td class="index-name">Perception de la corruption</td>
                     <td class="indice">47</td>
                     <td class="rank">(<span class="num">145</span> <span class="span-nd">ème</span>)</td>
                     <td class="information">
@@ -336,8 +335,7 @@
         <div id="societyInformations" class="collapse show">
             <table class="table-informations">
 				<tr class="language">
-                    <td>Langue officielle</td>
-                    
+                    <td class="index-name">Langue officielle</td>     
                     <td class="translate">Arabe</td>
                     <td class="indice">(<span class="val">العربية</span>)</td>
                     <td class="information">
@@ -351,7 +349,7 @@
                     </td>
                 </tr>
                 <tr class="life-expectancy">
-                    <td>Espérance de vie</td>
+                    <td class="index-name">Espérance de vie</td>
                     <td class="indice"><span class="val">64</span> ans</td>
                     <td class="rank">(<span class="num">167</span> <span class="span-nd">ème</span>)</td>
                     <td class="information">
@@ -365,8 +363,7 @@
                     </td>
 				</tr>
 				<tr class="infant-mortality">
-                    <td>Mortalité Infantile</td>
-                    
+                    <td class="index-name">Mortalité Infantile</td>       
                     <td class="indice"><span class="val">98,7</span></td>
                     <td class="rank">(<span class="num">120</span> <span class="span-nd">ème</span>)</td>
                     <td class="information">
@@ -380,8 +377,7 @@
                     </td>
                 </tr>
                 <tr class="literacy-rate">
-                    <td>Alphabétisation</td>
-                    
+                    <td class="index-name">Alphabétisation</td> 
                     <td class="indice"><span class="val">98,7</span> %</td>
                     <td class="rank">(<span class="num">120</span> <span class="span-nd">ème</span>)</td>
                     <td class="information">
@@ -415,7 +411,7 @@
         <div id="climateInformations" class="collapse show">
             <table class="table-informations">
 				<tr class="cop-signature">
-					<td>COP 21</td>
+					<td class="index-name">COP 21</td>
 					<td class="indice">Signé</td>
                     <td id="checkCop21" class="check-level-1">
 						<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check-all" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -433,8 +429,7 @@
                     </td>
 				</tr>
 				<tr class="global-emission">
-                    <td>% CO<sup>2</sup> monde</td>
-                    
+                    <td class="index-name">% CO<sup>2</sup> monde</td>        
                     <td class="indice"><span class="val">98,7</span> %</td>
                     <td class="rank">(<span class="num">120</span> <span class="span-nd">ème</span>)</td>
                     <td class="information">
@@ -524,6 +519,12 @@
 					<div class="energy-pourcentage">
 						<span class="val">12.59</span><span> %</span>
 					</div>
+				</div>
+				<div class="source-energy-mix">
+					<a href="https://ourworldindata.org/energy-mix"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+						<path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+						<path d="M8.93 6.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+					  </svg> Source</a>
 				</div>
 			</div>
 		</div>
@@ -2170,6 +2171,8 @@
 	<script src="data/country-clashes.js" type="text/javascript"></script>
 
 	<script src="data/country-translate-en-fr.js" type="text/javascript"></script>
+
+	<script src="data/index-descriptions.js" type="text/javascript"></script>
 
 	<script src="JS/jquery.color.js"></script>
     

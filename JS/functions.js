@@ -256,6 +256,8 @@ function changeSwitchMenuButton () {
 function openInformationIndex () {
 
     var open =  $('#mainDialogBox').css('opacity');
+    var indexName = $(this).parent().prevAll('.index-name').text();
+    diplayIndexInformation(indexName, indexDescriptions);
 
     // If Close
     if (open == 0)
@@ -797,4 +799,22 @@ function removeNoDataRow () {
     {
         $('#energyMix').show();
     }
+}
+
+function diplayIndexInformation(IndexName, object) {
+
+    for (i = 0; i < object.length; i++)
+    {
+        if(object[i].name.toUpperCase() == IndexName.toUpperCase()) {
+
+            $('#DialogBoxIndexName').html(object[i].name);
+            $('.update-date-of-indice').html(object[i].date);
+            $('#DialogBoxIndexOrganism').html(object[i].OrganismName);
+            $('.source-link').attr('href', object[i].source);
+            $('#containerDescriptionIndex .presentation').html(object[i].presentation);
+            $('#containerDescriptionIndex .organism').html(object[i].organismDescription);
+            $('#containerDescriptionIndex .other-index').html(object[i].other);
+        }
+    }
+
 }

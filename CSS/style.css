@@ -439,6 +439,20 @@ background: #555;
     width: 30%;
 }
 
+.source-energy-mix {
+    font-weight: 100;
+    font-size: 0.8em;
+    text-align: center;
+    margin-top: 0.8em;
+}
+
+.source-energy-mix a svg {
+    font-size: 0.8em;
+    width: 1.2em;
+    margin-top: -0.2em;
+    margin-right: 0.2em;
+}
+
 .extend-category {
     float: right;
     margin-right: 0.35em;
