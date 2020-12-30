@@ -183,6 +183,23 @@ background: #555;
     box-shadow: 0 1px 3px rgba(50, 50, 93, 0.15), 0 1px 0 rgba(0, 0, 0, 0.02);
 }
 
+.signature p {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    font-size: 0.6em;
+    padding: 2em;
+    color: rgb(33 37 41 / 0.5);
+    margin-bottom: 0.2em;
+    background-color: #f9fbfd;
+}
+
+.signature p span svg {
+    width: 1em;
+    margin-right: 0.1em;
+    color: #ff0074;
+}
+
 /* === Right NavBar === */
 
 #vertical-right-bar {
@@ -410,11 +427,11 @@ background: #555;
     width: 70%;
     height: 0.4em;
     margin-top: 0.45em;
-    background: linear-gradient(-45deg, rgb(11 98 228 / 0.2), transparent);
-    background: -webkit-linear-gradient(-45deg, rgb(11 98 228 / 0.2), transparent);   
-    background:    -moz-linear-gradient(-45deg, rgb(11 98 228 / 0.2), transparent);
-    background:     -ms-linear-gradient(-45deg, rgb(11 98 228 / 0.2), transparent);
-    background:      -o-linear-gradient(-45deg, rgb(11 98 228 / 0.2), transparent);
+    background-image: linear-gradient(-45deg, rgb(11 98 228 / 0.2), rgba(255, 255, 255, 0));
+    background-image: -webkit-linear-gradient(-45deg, rgb(11 98 228 / 0.2), rgba(255, 255, 255, 0));   
+    background-image: -moz-linear-gradient(-45deg, rgb(11 98 228 / 0.2), rgba(255, 255, 255, 0));
+    background-image: -ms-linear-gradient(-45deg, rgb(11 98 228 / 0.2), rgba(255, 255, 255, 0));
+    background-image: -o-linear-gradient(-45deg, rgb(11 98 228 / 0.2), rgba(255, 255, 255, 0));
     border-radius: 0.4em;
 }
 
@@ -424,10 +441,10 @@ background: #555;
     width: 30%;
     background-color: #FF9A8B;
     background-image: linear-gradient(90deg, #f70d76 0%, #fd2d4f 55%, #fe4c27 100%);
-    background: -webkit-linear-gradient(90deg, #f70d76 0%, #fd2d4f 55%, #fe4c27 100%);   
-    background:    -moz-linear-gradient(90deg, #f70d76 0%, #fd2d4f 55%, #fe4c27 100%);
-    background:     -ms-linear-gradient(90deg, #f70d76 0%, #fd2d4f 55%, #fe4c27 100%);
-    background:      -o-linear-gradient(90deg, #f70d76 0%, #fd2d4f 55%, #fe4c27 100%);
+    background-image: -webkit-linear-gradient(90deg, #f70d76 0%, #fd2d4f 55%, #fe4c27 100%);   
+    background-image: -moz-linear-gradient(90deg, #f70d76 0%, #fd2d4f 55%, #fe4c27 100%);
+    background-image: -ms-linear-gradient(90deg, #f70d76 0%, #fd2d4f 55%, #fe4c27 100%);
+    background-image: -o-linear-gradient(90deg, #f70d76 0%, #fd2d4f 55%, #fe4c27 100%);
     border-radius: 04em;
     box-shadow: 0 0px 6px rgba(50, 50, 93, 0.15), 0 1px 0 rgba(0, 0, 0, 0.02);
 }
@@ -783,6 +800,18 @@ background: #555;
 
 /* ________________ MEDIA QUERY ________________*/
 
+@-moz-document url-prefix() {
+    #vertical-right-bar 
+    {
+        background-color: rgb(242 246 250 / 0.8) !important;
+    }
+
+    #mainDialogBox 
+    {
+        background-color: rgb(242 246 250 / 0.8) !important;
+    }
+  }
+
 @media (max-width: 900px) {
     .disabled-on-small-screen {
         display: none !important;
@@ -795,5 +824,6 @@ background: #555;
     #mainDialogBox {
         width: calc(100vw - 100px) !important;
         padding: 1.5em calc(50vw + 2em - 10px) 1.5em 2em !important;
+        background-color: #f2f6fa !important;
     }
 }
