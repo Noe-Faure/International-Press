@@ -1,6 +1,6 @@
 var giniIndex = [
   {
-    "country": "Czechia",
+    "country": "Czech Republic",
     "code": "CZE",
     "year": 1988,
     "index": 19.4
